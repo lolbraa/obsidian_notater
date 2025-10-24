@@ -1,0 +1,3 @@
+![Exported image](Exported%20image%2020240415112227-0.png) ![Exported image](Exported%20image%2020240415112227-1.png) ![Exported image](Exported%20image%2020240415112227-2.png) ![Exported image](Exported%20image%2020240415112227-3.png) ![Exported image](Exported%20image%2020240415112227-4.png) ![Exported image](Exported%20image%2020240415112227-5.png) ![Exported image](Exported%20image%2020240415112227-6.png) ![Exported image](Exported%20image%2020240415112227-7.png) ![Exported image](Exported%20image%2020240415112227-8.png) ![Exported image](Exported%20image%2020240415112227-9.png) ![Exported image](Exported%20image%2020240415112227-10.png)
+
+![[ELE141 Lab 8 - K4 Bokmål.pdf]]

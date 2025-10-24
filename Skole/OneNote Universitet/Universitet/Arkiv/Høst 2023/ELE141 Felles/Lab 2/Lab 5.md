@@ -1,0 +1,3 @@
+![Exported image](Exported%20image%2020240415112223-0.png) ![Exported image](Exported%20image%2020240415112223-1.png) ![Exported image](Exported%20image%2020240415112223-2.png) ![Exported image](Exported%20image%2020240415112223-3.png) ![Exported image](Exported%20image%2020240415112223-4.png) ![Exported image](Exported%20image%2020240415112223-5.png) ![Exported image](Exported%20image%2020240415112223-6.png) ![Exported image](Exported%20image%2020240415112223-7.png) ![Exported image](Exported%20image%2020240415112223-8.octet-stream)
+
+![[ELE141 Lab 5 - D3 Bokmål.pdf]]

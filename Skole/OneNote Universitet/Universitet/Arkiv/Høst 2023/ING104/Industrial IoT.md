@@ -1,0 +1,1 @@
+![Industry 4.0](Exported%20image%2020240415112328-0.png)

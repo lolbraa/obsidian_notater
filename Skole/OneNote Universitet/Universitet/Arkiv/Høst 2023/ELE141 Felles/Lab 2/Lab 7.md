@@ -1,0 +1,3 @@
+![Exported image](Exported%20image%2020240415112225-0.png) ![Exported image](Exported%20image%2020240415112225-1.png) ![Exported image](Exported%20image%2020240415112225-2.png) ![Exported image](Exported%20image%2020240415112225-3.png) ![Exported image](Exported%20image%2020240415112225-4.png) ![Exported image](Exported%20image%2020240415112225-5.png) ![Exported image](Exported%20image%2020240415112225-6.png) ![Exported image](Exported%20image%2020240415112225-7.png)
+
+![[ELE141 Lab 7 - D4 Bokmål.pdf]]

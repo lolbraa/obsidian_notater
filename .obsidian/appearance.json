@@ -1,0 +1,13 @@
+{
+  "accentColor": "",
+  "cssTheme": "Minimal",
+  "theme": "system",
+  "baseFontSize": 16,
+  "enabledCssSnippets": [
+    "First level folder bg",
+    "First level folder bg (Title only)",
+    "MathJax_større"
+  ],
+  "showViewHeader": true,
+  "showRibbon": false
+}

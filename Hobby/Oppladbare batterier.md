@@ -1,0 +1,2 @@
+[Varta Power oppladbare AA/HR6-batterier, 10-pakning | Clas Ohlson](https://www.clasohlson.com/no/Varta-Power-oppladbare-AA-HR6-batterier,-10-pakning/p/36-8721)
+[Varta Power oppladbare AAA-batterier (HR03), 10-pakning | Clas Ohlson](https://www.clasohlson.com/no/Varta-Power-oppladbare-AAA-batterier-(HR03),-10-pakning/p/36-8722)

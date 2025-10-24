@@ -1,0 +1,2 @@
+[Tasmota / ESPHome Smart Plug | Power Monitoring | Local Bytes](https://www.mylocalbytes.com/en-eu/products/smart-plug-pm?variant=41600621543615)
+[Getting Started with our Tasmota Products | LocalBytes Blog](https://blog.mylocalbytes.com/kb/2022-10-01/getting-started-with-tasmota)

@@ -1,0 +1,19 @@
+{
+  "versionValue": "0.1.7",
+  "startupBackupStatus": false,
+  "lifecycleValue": "3",
+  "backupsPerDayValue": "1",
+  "maxRetriesValue": "1",
+  "retryIntervalValue": "100",
+  "winSavePathValue": "\\\\lolbraanas\\Lolbraa Backup\\Diverse\\Obsidian_Notater",
+  "unixSavePathValue": "C:\\Users\\Kriss\\Documents",
+  "fileNameFormatValue": "Obsidian-Backup-%Y_%m_%d-%H_%M_%S",
+  "intervalBackupStatus": false,
+  "backupFrequencyValue": "5",
+  "callingArchiverStatus": false,
+  "archiverTypeValue": "sevenZip",
+  "archiveFileTypeValue": "zip",
+  "archiverWinPathValue": "",
+  "archiverUnixPathValue": "",
+  "showRibbonIcon": true
+}
