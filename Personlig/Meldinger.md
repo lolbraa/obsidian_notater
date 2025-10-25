@@ -1,3 +1,39 @@
+# Posten rød postboks fantoft
+Jeg la denne uka et brev i den røde postkassen på Fantoft studentby. Denne dukker ikke lenger opp på kartet deres; er den tatt ut av drift?
+
+Den er festet på det som tidligere var et bygg kun for postkasser, men det systemet er avviklet. Den står der fortsatt uten annen informasjon enn at den tømmes ved levering av post. Det er kun tilfeldig at jeg sjekket kartet, men den står ikke merket slik andre gjør.
+
+Den henger på Fantoftvegen 14T, litt nord for "Pakkeboks Fantoft studentboliger" https://kart.1881.no/bergen/5075-bergen/fantoftvegen-14T
+
+et øyevlikk
+
+[Finn Posten på kartet – hentesteder og innleveringspunkter](https://www.posten.no/kart)
+
+**På grunn av inaktivitet vil samtalen automatisk avsluttes om to minutter. Du kan sende en ny melding for å fortsette samtalen.**
+
+Det er i det kartet at jeg ikke finner den aktuelle røde postboksen ja. Hvis den er dekommisjonert, så må den i så fall tømmes og fjernes :)
+
+Vi tømmes selvsagt en rød kasse, før den eventuell blir fjernes.
+
+Men blir den aktivt tømt?
+
+Er tidssensitivt det jeg har sendt, så derfor jeg vil være sikker på at postboksen faktisk er i bruk.
+
+Vi tømmer i forbindelse med postlevering.
+
+Så det er et definitivt ja til at denne ikke er tatt ut av drift?
+
+jeg vet ikke det, da jeg bare kan se hvilke som er aktiv. jeg må eventuelt sjekke det og svare deg på mail.
+
+Skjønner, dette ønsker jeg på det sterkeste å få et definitivt svar på. Tusen takk for hjelpen, håper du finner fort ut av det
+
+Sjekker og du hørere fra meg, men det blir ikke før over helgen.
+
+men jeg kan si deg med sikkerhet at vi om vi fjerner en innleveirngskasse, så vil vi posten som ligger i den, bli sendt videre
+
+Mhm, det forstår jeg. Er bare redd at postboksen er blitt etterlatt og glemt; det tidligere posthuset ble "dekommisjoner" for snart ett år siden, men så henger den der fortsatt.
+
+Det går nok bra. Tusen takk igjen, ha en god helg!
 # ING303 gruppe pitch 17.10.2025
 Nå har vi godt moment med oppgaven vår! Det er veldig gøy å se hvor godt vi gjør det sammen.
 På mandag skal vi møtes igjen, og da er agendaen kun å forberede oss til pitchen på tirsdag. For å kunne stille som en "samlet front" på tirsdag, må vi sørge for at vi er på samme side om helheten i oppgaven, og evt. diskutere uenigheter/ulike oppfatninger. Jeg forventer at vi alle skal måtte stå fremfor forsamlingen for å svare på spørsmål, selv om Jacob bærer hovedbyrden for oss.
