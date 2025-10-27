@@ -1,6 +1,7 @@
 Spennende å høre med kunde, på eget insj
 
-
+- Giorgio, Maritime Robotics (?), tåkehorn lyd lokasjon sensor
+	- [JSV \| Journal of Sound and Vibration \| ScienceDirect.com by Elsevier](https://www.sciencedirect.com/journal/journal-of-sound-and-vibration)
 
 - [SLB in Scandinavia \| SLB](https://www.slb.com/about/who-we-are/our-global-presence/slb-scandinavia)
 - 
