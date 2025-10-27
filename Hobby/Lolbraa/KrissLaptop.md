@@ -756,6 +756,975 @@ Masse feilmeldinger i dmesg
 > [11138.885850] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110
 > ```
 
+> [!NOTE]- Logg en gang det forsvant og kom tilbake igjen
+> 
+> ```LOG
+> [51970.259872] iwlwifi 0000:00:14.3: Microcode SW error detected. Restarting 0x0.
+> [51970.259972] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [51970.259975] iwlwifi 0000:00:14.3: Transport status: 0x0000004A, valid: 6
+> [51970.259979] iwlwifi 0000:00:14.3: Loaded firmware version: 77.6eaf654b.0 Qu-c0-hr-b0-77.ucode
+> [51970.259983] iwlwifi 0000:00:14.3: 0x00000091 | ADVANCED_SYSASSERT          
+> [51970.259987] iwlwifi 0000:00:14.3: 0x000022F3 | trm_hw_status0
+> [51970.259990] iwlwifi 0000:00:14.3: 0x00000000 | trm_hw_status1
+> [51970.259993] iwlwifi 0000:00:14.3: 0x004C9742 | branchlink2
+> [51970.259996] iwlwifi 0000:00:14.3: 0x000076A8 | interruptlink1
+> [51970.259999] iwlwifi 0000:00:14.3: 0x000076A8 | interruptlink2
+> [51970.260002] iwlwifi 0000:00:14.3: 0x00006154 | data1
+> [51970.260004] iwlwifi 0000:00:14.3: 0x00010000 | data2
+> [51970.260007] iwlwifi 0000:00:14.3: 0x00000000 | data3
+> [51970.260010] iwlwifi 0000:00:14.3: 0x674051ED | beacon time
+> [51970.260013] iwlwifi 0000:00:14.3: 0x00000000 | tsf low
+> [51970.260015] iwlwifi 0000:00:14.3: 0x00000000 | tsf hi
+> [51970.260018] iwlwifi 0000:00:14.3: 0x00000000 | time gp1
+> [51970.260021] iwlwifi 0000:00:14.3: 0x21F57D5C | time gp2
+> [51970.260023] iwlwifi 0000:00:14.3: 0x00000001 | uCode revision type
+> [51970.260026] iwlwifi 0000:00:14.3: 0x0000004D | uCode version major
+> [51970.260029] iwlwifi 0000:00:14.3: 0x6EAF654B | uCode version minor
+> [51970.260032] iwlwifi 0000:00:14.3: 0x00000332 | hw version
+> [51970.260035] iwlwifi 0000:00:14.3: 0x00C89002 | board version
+> [51970.260038] iwlwifi 0000:00:14.3: 0x80F6F400 | hcmd
+> [51970.260040] iwlwifi 0000:00:14.3: 0x66F20400 | isr0
+> [51970.260043] iwlwifi 0000:00:14.3: 0x00000000 | isr1
+> [51970.260045] iwlwifi 0000:00:14.3: 0x08F00002 | isr2
+> [51970.260048] iwlwifi 0000:00:14.3: 0x00C1400F | isr3
+> [51970.260051] iwlwifi 0000:00:14.3: 0x00000000 | isr4
+> [51970.260054] iwlwifi 0000:00:14.3: 0x0396001C | last cmd Id
+> [51970.260056] iwlwifi 0000:00:14.3: 0x00006154 | wait_event
+> [51970.260059] iwlwifi 0000:00:14.3: 0x000000B4 | l2p_control
+> [51970.260062] iwlwifi 0000:00:14.3: 0x00001C20 | l2p_duration
+> [51970.260064] iwlwifi 0000:00:14.3: 0x0000000F | l2p_mhvalid
+> [51970.260067] iwlwifi 0000:00:14.3: 0x00000006 | l2p_addr_match
+> [51970.260070] iwlwifi 0000:00:14.3: 0x00000002 | lmpm_pmg_sel
+> [51970.260072] iwlwifi 0000:00:14.3: 0x00000000 | timestamp
+> [51970.260075] iwlwifi 0000:00:14.3: 0x0000D08C | flow_handler
+> [51970.260140] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [51970.260143] iwlwifi 0000:00:14.3: Transport status: 0x0000004A, valid: 7
+> [51970.260146] iwlwifi 0000:00:14.3: 0x20000070 | NMI_INTERRUPT_LMAC_FATAL
+> [51970.260150] iwlwifi 0000:00:14.3: 0x00000000 | umac branchlink1
+> [51970.260153] iwlwifi 0000:00:14.3: 0x804561EA | umac branchlink2
+> [51970.260155] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink1
+> [51970.260158] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink2
+> [51970.260161] iwlwifi 0000:00:14.3: 0x00000400 | umac data1
+> [51970.260164] iwlwifi 0000:00:14.3: 0x80473712 | umac data2
+> [51970.260166] iwlwifi 0000:00:14.3: 0x00000000 | umac data3
+> [51970.260169] iwlwifi 0000:00:14.3: 0x0000004D | umac major
+> [51970.260172] iwlwifi 0000:00:14.3: 0x6EAF654B | umac minor
+> [51970.260174] iwlwifi 0000:00:14.3: 0x21F57DF0 | frame pointer
+> [51970.260177] iwlwifi 0000:00:14.3: 0xC0886260 | stack pointer
+> [51970.260180] iwlwifi 0000:00:14.3: 0x0094010C | last host cmd
+> [51970.260182] iwlwifi 0000:00:14.3: 0x00000000 | isr status reg
+> [51970.260206] iwlwifi 0000:00:14.3: IML/ROM dump:
+> [51970.260209] iwlwifi 0000:00:14.3: 0x00000003 | IML/ROM error/state
+> [51970.260233] iwlwifi 0000:00:14.3: 0x000057F5 | IML/ROM data1
+> [51970.260260] iwlwifi 0000:00:14.3: 0x00000080 | IML/ROM WFPM_AUTH_KEY_0
+> [51970.260285] iwlwifi 0000:00:14.3: Fseq Registers:
+> [51970.260305] iwlwifi 0000:00:14.3: 0x60000000 | FSEQ_ERROR_CODE
+> [51970.260326] iwlwifi 0000:00:14.3: 0x80290033 | FSEQ_TOP_INIT_VERSION
+> [51970.260347] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_CNVIO_INIT_VERSION
+> [51970.260369] iwlwifi 0000:00:14.3: 0x0000A492 | FSEQ_OTP_VERSION
+> [51970.260390] iwlwifi 0000:00:14.3: 0x00000003 | FSEQ_TOP_CONTENT_VERSION
+> [51970.260411] iwlwifi 0000:00:14.3: 0x4552414E | FSEQ_ALIVE_TOKEN
+> [51970.260432] iwlwifi 0000:00:14.3: 0x02000300 | FSEQ_CNVI_ID
+> [51970.260453] iwlwifi 0000:00:14.3: 0x01300504 | FSEQ_CNVR_ID
+> [51970.260458] iwlwifi 0000:00:14.3: 0x02000300 | CNVI_AUX_MISC_CHIP
+> [51970.260480] iwlwifi 0000:00:14.3: 0x01300504 | CNVR_AUX_MISC_CHIP
+> [51970.260502] iwlwifi 0000:00:14.3: 0x05B0905B | CNVR_SCU_SD_REGS_SD_REG_DIG_DCDC_VTRIM
+> [51970.260523] iwlwifi 0000:00:14.3: 0x0000025B | CNVR_SCU_SD_REGS_SD_REG_ACTIVE_VDIG_MIRROR
+> [51970.260543] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_PREV_CNVIO_INIT_VERSION
+> [51970.260565] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_WIFI_FSEQ_VERSION
+> [51970.260586] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_BT_FSEQ_VERSION
+> [51970.260607] iwlwifi 0000:00:14.3: 0x00000136 | FSEQ_CLASS_TP_VERSION
+> [51970.260619] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0x80473220
+> [51970.260638] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xd0
+> [51970.260703] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 4 fired (delay=0ms).
+> [51970.662224] iwlwifi 0000:00:14.3: Device error - SW reset
+> [51970.662424] ieee80211 phy0: Hardware restart was requested
+> [51970.819102] iwlwifi 0000:00:14.3: Microcode SW error detected. Restarting 0x0.
+> [51970.819173] iwlwifi 0000:00:14.3: Failed to start RT ucode: -5
+> [51970.819183] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 13 fired (delay=0ms).
+> [51970.819202] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [51970.819205] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 6
+> [51970.819209] iwlwifi 0000:00:14.3: Loaded firmware version: 77.6eaf654b.0 Qu-c0-hr-b0-77.ucode
+> [51970.819213] iwlwifi 0000:00:14.3: 0x00000091 | ADVANCED_SYSASSERT          
+> [51970.819217] iwlwifi 0000:00:14.3: 0x0000A2F0 | trm_hw_status0
+> [51970.819220] iwlwifi 0000:00:14.3: 0x00000000 | trm_hw_status1
+> [51970.819222] iwlwifi 0000:00:14.3: 0x004C9742 | branchlink2
+> [51970.819225] iwlwifi 0000:00:14.3: 0x00015706 | interruptlink1
+> [51970.819227] iwlwifi 0000:00:14.3: 0x00015706 | interruptlink2
+> [51970.819230] iwlwifi 0000:00:14.3: 0x00013186 | data1
+> [51970.819232] iwlwifi 0000:00:14.3: 0x00010000 | data2
+> [51970.819235] iwlwifi 0000:00:14.3: 0x00000000 | data3
+> [51970.819237] iwlwifi 0000:00:14.3: 0x00000000 | beacon time
+> [51970.819240] iwlwifi 0000:00:14.3: 0x00000000 | tsf low
+> [51970.819242] iwlwifi 0000:00:14.3: 0x00000000 | tsf hi
+> [51970.819245] iwlwifi 0000:00:14.3: 0x00000000 | time gp1
+> [51970.819247] iwlwifi 0000:00:14.3: 0x0001F354 | time gp2
+> [51970.819250] iwlwifi 0000:00:14.3: 0x00000001 | uCode revision type
+> [51970.819252] iwlwifi 0000:00:14.3: 0x0000004D | uCode version major
+> [51970.819255] iwlwifi 0000:00:14.3: 0x6EAF654B | uCode version minor
+> [51970.819258] iwlwifi 0000:00:14.3: 0x00000332 | hw version
+> [51970.819260] iwlwifi 0000:00:14.3: 0x00C89002 | board version
+> [51970.819263] iwlwifi 0000:00:14.3: 0x8017FD28 | hcmd
+> [51970.819266] iwlwifi 0000:00:14.3: 0x62F29400 | isr0
+> [51970.819268] iwlwifi 0000:00:14.3: 0x00000000 | isr1
+> [51970.819270] iwlwifi 0000:00:14.3: 0x08F00002 | isr2
+> [51970.819273] iwlwifi 0000:00:14.3: 0x04C0001C | isr3
+> [51970.819275] iwlwifi 0000:00:14.3: 0x00000000 | isr4
+> [51970.819278] iwlwifi 0000:00:14.3: 0x00000000 | last cmd Id
+> [51970.819280] iwlwifi 0000:00:14.3: 0x00013186 | wait_event
+> [51970.819283] iwlwifi 0000:00:14.3: 0x00000000 | l2p_control
+> [51970.819286] iwlwifi 0000:00:14.3: 0x00000000 | l2p_duration
+> [51970.819288] iwlwifi 0000:00:14.3: 0x00000000 | l2p_mhvalid
+> [51970.819290] iwlwifi 0000:00:14.3: 0x00000000 | l2p_addr_match
+> [51970.819293] iwlwifi 0000:00:14.3: 0x00000000 | lmpm_pmg_sel
+> [51970.819295] iwlwifi 0000:00:14.3: 0x00000000 | timestamp
+> [51970.819298] iwlwifi 0000:00:14.3: 0x00000020 | flow_handler
+> [51970.819342] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [51970.819344] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 7
+> [51970.819347] iwlwifi 0000:00:14.3: 0x20000070 | NMI_INTERRUPT_LMAC_FATAL
+> [51970.819350] iwlwifi 0000:00:14.3: 0x00000000 | umac branchlink1
+> [51970.819353] iwlwifi 0000:00:14.3: 0x804561EA | umac branchlink2
+> [51970.819355] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink1
+> [51970.819358] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink2
+> [51970.819360] iwlwifi 0000:00:14.3: 0x00000400 | umac data1
+> [51970.819363] iwlwifi 0000:00:14.3: 0x80473712 | umac data2
+> [51970.819365] iwlwifi 0000:00:14.3: 0x00000000 | umac data3
+> [51970.819368] iwlwifi 0000:00:14.3: 0x0000004D | umac major
+> [51970.819370] iwlwifi 0000:00:14.3: 0x6EAF654B | umac minor
+> [51970.819373] iwlwifi 0000:00:14.3: 0x0001F3ED | frame pointer
+> [51970.819375] iwlwifi 0000:00:14.3: 0xC0886260 | stack pointer
+> [51970.819378] iwlwifi 0000:00:14.3: 0x00010C00 | last host cmd
+> [51970.819380] iwlwifi 0000:00:14.3: 0x00000000 | isr status reg
+> [51970.819404] iwlwifi 0000:00:14.3: IML/ROM dump:
+> [51970.819406] iwlwifi 0000:00:14.3: 0x00000003 | IML/ROM error/state
+> [51970.819431] iwlwifi 0000:00:14.3: 0x0000588C | IML/ROM data1
+> [51970.819458] iwlwifi 0000:00:14.3: 0x00000080 | IML/ROM WFPM_AUTH_KEY_0
+> [51970.819482] iwlwifi 0000:00:14.3: Fseq Registers:
+> [51970.819502] iwlwifi 0000:00:14.3: 0x60000000 | FSEQ_ERROR_CODE
+> [51970.819507] iwlwifi 0000:00:14.3: 0x80290033 | FSEQ_TOP_INIT_VERSION
+> [51970.819527] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_CNVIO_INIT_VERSION
+> [51970.819532] iwlwifi 0000:00:14.3: 0x0000A492 | FSEQ_OTP_VERSION
+> [51970.819552] iwlwifi 0000:00:14.3: 0x00000003 | FSEQ_TOP_CONTENT_VERSION
+> [51970.819573] iwlwifi 0000:00:14.3: 0x4552414E | FSEQ_ALIVE_TOKEN
+> [51970.819577] iwlwifi 0000:00:14.3: 0x02000300 | FSEQ_CNVI_ID
+> [51970.819597] iwlwifi 0000:00:14.3: 0x01300504 | FSEQ_CNVR_ID
+> [51970.819602] iwlwifi 0000:00:14.3: 0x02000300 | CNVI_AUX_MISC_CHIP
+> [51970.819624] iwlwifi 0000:00:14.3: 0x01300504 | CNVR_AUX_MISC_CHIP
+> [51970.819646] iwlwifi 0000:00:14.3: 0x05B0905B | CNVR_SCU_SD_REGS_SD_REG_DIG_DCDC_VTRIM
+> [51970.819668] iwlwifi 0000:00:14.3: 0x0000025B | CNVR_SCU_SD_REGS_SD_REG_ACTIVE_VDIG_MIRROR
+> [51970.819688] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_PREV_CNVIO_INIT_VERSION
+> [51970.819709] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_WIFI_FSEQ_VERSION
+> [51970.819714] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_BT_FSEQ_VERSION
+> [51970.819733] iwlwifi 0000:00:14.3: 0x00000136 | FSEQ_CLASS_TP_VERSION
+> [51970.819745] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0x80473220
+> [51970.819764] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xd0
+> [51971.424879] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 4 fired (delay=0ms).
+> [51971.833736] ------------[ cut here ]------------
+> [51971.833739] Hardware became unavailable during restart.
+> [51971.833809] WARNING: CPU: 5 PID: 74953 at net/mac80211/util.c:1821 ieee80211_reconfig+0xe2/0x17b0 [mac80211]
+> [51971.833875] Modules linked in: vhost_net vhost vhost_iotlb tap iptable_mangle xt_CHECKSUM xt_multiport iptable_nat nf_conntrack_netlink xt_nat veth xt_mark xt_MASQUERADE bridge stp llc xt_set ip_set nft_chain_nat nf_nat xfrm_user xfrm_algo ccm rfcomm cmac algif_hash algif_skcipher af_alg snd_seq_dummy snd_hrtimer snd_hda_codec_intelhdmi overlay bnep ip6t_REJECT nf_reject_ipv6 xt_hl zram ip6t_rt 842_decompress 842_compress ipt_REJECT lz4hc_compress nf_reject_ipv4 lz4_compress xt_LOG nf_log_syslog input_leds joydev nft_limit hid_multitouch xt_limit xt_addrtype xt_tcpudp xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 nft_compat snd_hda_codec_alc269 snd_hda_scodec_component snd_hda_codec_realtek_lib snd_hda_codec_generic snd_hda_intel nf_tables snd_sof_pci_intel_icl snd_sof_pci_intel_cnl snd_sof_intel_hda_generic nfnetlink soundwire_intel snd_sof_intel_hda_sdw_bpt binfmt_misc snd_sof_intel_hda_common snd_soc_hdac_hda snd_sof_intel_hda_mlink snd_sof_intel_hda snd_hda_codec_hdmi soundwire_cadence snd_sof_pci
+> [51971.833913]  snd_sof_xtensa_dsp snd_sof snd_sof_utils snd_soc_acpi_intel_match snd_soc_acpi_intel_sdca_quirks soundwire_generic_allocation snd_soc_acpi soundwire_bus snd_soc_sdca crc8 snd_soc_avs snd_soc_hda_codec snd_hda_ext_core snd_hda_codec hid_generic intel_uncore_frequency intel_uncore_frequency_common snd_hda_core mei_pxp mei_hdcp snd_intel_dspcfg surface_hid snd_intel_sdw_acpi ipts snd_hwdep surface_hid_core surface_platform_profile platform_profile hid intel_tcc_cooling surface_battery snd_soc_core surface_charger intel_rapl_msr snd_compress x86_pkg_temp_thermal ac97_bus snd_pcm_dmaengine intel_powerclamp snd_pcm coretemp snd_seq_midi iwlmvm snd_seq_midi_event nls_iso8859_1 snd_rawmidi gpio_keys kvm_intel surface_gpe processor_thermal_device_pci_legacy snd_seq btusb mac80211 processor_thermal_device kvm processor_thermal_wt_hint btrtl platform_temperature_control snd_seq_device btintel irqbypass processor_thermal_rfim libarc4 snd_timer btbcm btmtk processor_thermal_rapl rapl cmdlinepart iwlwifi spi_nor snd
+> [51971.833954]  intel_cstate intel_rapl_common mei_me intel_wmi_thunderbolt bluetooth mtd 8250_dw intel_pmc_core soundcore mei pmt_telemetry processor_thermal_wt_req cfg80211 processor_thermal_power_floor pmt_discovery pmt_class processor_thermal_mbox int3403_thermal intel_soc_dts_iosf int340x_thermal_zone surfacepro3_button intel_pmc_ssram_telemetry mac_hid int3400_thermal surface_aggregator_registry acpi_pad soc_button_array surface_hotplug surface_acpi_notify intel_vsec acpi_tad dptf_power acpi_thermal_rel sch_fq_codel kyber_iosched msr parport_pc ppdev lp parport efi_pstore ip_tables x_tables autofs4 dm_crypt raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor raid6_pq raid1 raid0 linear system76_io(OE) system76_acpi(OE) i915 nvme drm_buddy polyval_clmulni ttm ghash_clmulni_intel i2c_algo_bit nvme_core spi_intel_pci drm_display_helper nvme_keyring intel_lpss_pci spi_intel nvme_auth intel_lpss cec idma64 rc_core video surface_aggregator wmi crc_itu_t pinctrl_icelake aesni_intel
+> [51971.834018] CPU: 5 UID: 0 PID: 74953 Comm: kworker/5:1 Tainted: G        W  OE       6.17.1-surface-2 #2 PREEMPT(voluntary) 
+> [51971.834022] Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+> [51971.834024] Hardware name: Microsoft Corporation Surface Laptop 3/Surface Laptop 3, BIOS 19.101.140 04/11/2024
+> [51971.834026] Workqueue: events_freezable ieee80211_restart_work [mac80211]
+> [51971.834071] RIP: 0010:ieee80211_reconfig+0xe2/0x17b0 [mac80211]
+> [51971.834125] Code: 0f 85 24 03 00 00 41 c6 84 24 ad 05 00 00 00 4c 89 e7 e8 b1 1e fb ff 41 89 c7 85 c0 74 66 48 c7 c7 d0 7c 1b c1 e8 6e e7 c8 ca <0f> 0b 4c 89 e7 31 c9 ba 04 00 00 00 be ff ff 00 00 e8 88 ef ff ff
+> [51971.834128] RSP: 0018:ffffcf9f641cbd28 EFLAGS: 00010246
+> [51971.834130] RAX: 0000000000000000 RBX: ffff8e3987399b08 RCX: 0000000000000000
+> [51971.834131] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+> [51971.834132] RBP: ffffcf9f641cbe08 R08: 0000000000000000 R09: 0000000000000000
+> [51971.834133] R10: 0000000000000000 R11: 0000000000000000 R12: ffff8e3987398940
+> [51971.834133] R13: ffff8e3987399b08 R14: ffff8e3987398940 R15: 00000000fffffffb
+> [51971.834135] FS:  0000000000000000(0000) GS:ffff8e3d4ca60000(0000) knlGS:0000000000000000
+> [51971.834136] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+> [51971.834137] CR2: ffffe507405d1f30 CR3: 0000000204636005 CR4: 0000000000772ef0
+> [51971.834138] PKRU: 55555554
+> [51971.834139] Call Trace:
+> [51971.834140]  <TASK>
+> [51971.834143]  ? wq_worker_running+0xe/0x70
+> [51971.834147]  ? synchronize_rcu_expedited+0x1af/0x1f0
+> [51971.834150]  ? __pfx_autoremove_wake_function+0x10/0x10
+> [51971.834153]  ? __pfx_wait_rcu_exp_gp+0x10/0x10
+> [51971.834156]  ieee80211_restart_work+0xee/0x170 [mac80211]
+> [51971.834194]  process_one_work+0x19c/0x3f0
+> [51971.834198]  worker_thread+0x2ba/0x3d0
+> [51971.834201]  kthread+0x104/0x220
+> [51971.834203]  ? __pfx_worker_thread+0x10/0x10
+> [51971.834205]  ? __pfx_kthread+0x10/0x10
+> [51971.834207]  ret_from_fork+0x1ec/0x220
+> [51971.834209]  ? __pfx_kthread+0x10/0x10
+> [51971.834211]  ret_from_fork_asm+0x1a/0x30
+> [51971.834214]  </TASK>
+> [51971.834215] ---[ end trace 0000000000000000 ]---
+> [51971.839034] iwlwifi 0000:00:14.3: Failed to synchronize multicast groups update
+> [51971.839053] wlp0s20f3: deauthenticating from 88:9c:ad:04:e5:6e by local choice (Reason: 3=DEAUTH_LEAVING)
+> [51971.839181] iwlwifi 0000:00:14.3: Failed to trigger RX queues sync (-5)
+> [51971.839203] ------------[ cut here ]------------
+> [51971.839204] Driver is not allowed to fail if the sta_state is transitioning down the list: -5
+> [51971.839232] WARNING: CPU: 5 PID: 74953 at net/mac80211/sta_info.c:1467 _sta_info_move_state+0x208/0x5a0 [mac80211]
+> [51971.839267] Modules linked in: vhost_net vhost vhost_iotlb tap iptable_mangle xt_CHECKSUM xt_multiport iptable_nat nf_conntrack_netlink xt_nat veth xt_mark xt_MASQUERADE bridge stp llc xt_set ip_set nft_chain_nat nf_nat xfrm_user xfrm_algo ccm rfcomm cmac algif_hash algif_skcipher af_alg snd_seq_dummy snd_hrtimer snd_hda_codec_intelhdmi overlay bnep ip6t_REJECT nf_reject_ipv6 xt_hl zram ip6t_rt 842_decompress 842_compress ipt_REJECT lz4hc_compress nf_reject_ipv4 lz4_compress xt_LOG nf_log_syslog input_leds joydev nft_limit hid_multitouch xt_limit xt_addrtype xt_tcpudp xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 nft_compat snd_hda_codec_alc269 snd_hda_scodec_component snd_hda_codec_realtek_lib snd_hda_codec_generic snd_hda_intel nf_tables snd_sof_pci_intel_icl snd_sof_pci_intel_cnl snd_sof_intel_hda_generic nfnetlink soundwire_intel snd_sof_intel_hda_sdw_bpt binfmt_misc snd_sof_intel_hda_common snd_soc_hdac_hda snd_sof_intel_hda_mlink snd_sof_intel_hda snd_hda_codec_hdmi soundwire_cadence snd_sof_pci
+> [51971.839303]  snd_sof_xtensa_dsp snd_sof snd_sof_utils snd_soc_acpi_intel_match snd_soc_acpi_intel_sdca_quirks soundwire_generic_allocation snd_soc_acpi soundwire_bus snd_soc_sdca crc8 snd_soc_avs snd_soc_hda_codec snd_hda_ext_core snd_hda_codec hid_generic intel_uncore_frequency intel_uncore_frequency_common snd_hda_core mei_pxp mei_hdcp snd_intel_dspcfg surface_hid snd_intel_sdw_acpi ipts snd_hwdep surface_hid_core surface_platform_profile platform_profile hid intel_tcc_cooling surface_battery snd_soc_core surface_charger intel_rapl_msr snd_compress x86_pkg_temp_thermal ac97_bus snd_pcm_dmaengine intel_powerclamp snd_pcm coretemp snd_seq_midi iwlmvm snd_seq_midi_event nls_iso8859_1 snd_rawmidi gpio_keys kvm_intel surface_gpe processor_thermal_device_pci_legacy snd_seq btusb mac80211 processor_thermal_device kvm processor_thermal_wt_hint btrtl platform_temperature_control snd_seq_device btintel irqbypass processor_thermal_rfim libarc4 snd_timer btbcm btmtk processor_thermal_rapl rapl cmdlinepart iwlwifi spi_nor snd
+> [51971.839339]  intel_cstate intel_rapl_common mei_me intel_wmi_thunderbolt bluetooth mtd 8250_dw intel_pmc_core soundcore mei pmt_telemetry processor_thermal_wt_req cfg80211 processor_thermal_power_floor pmt_discovery pmt_class processor_thermal_mbox int3403_thermal intel_soc_dts_iosf int340x_thermal_zone surfacepro3_button intel_pmc_ssram_telemetry mac_hid int3400_thermal surface_aggregator_registry acpi_pad soc_button_array surface_hotplug surface_acpi_notify intel_vsec acpi_tad dptf_power acpi_thermal_rel sch_fq_codel kyber_iosched msr parport_pc ppdev lp parport efi_pstore ip_tables x_tables autofs4 dm_crypt raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor raid6_pq raid1 raid0 linear system76_io(OE) system76_acpi(OE) i915 nvme drm_buddy polyval_clmulni ttm ghash_clmulni_intel i2c_algo_bit nvme_core spi_intel_pci drm_display_helper nvme_keyring intel_lpss_pci spi_intel nvme_auth intel_lpss cec idma64 rc_core video surface_aggregator wmi crc_itu_t pinctrl_icelake aesni_intel
+> [51971.839380] CPU: 5 UID: 0 PID: 74953 Comm: kworker/5:1 Tainted: G        W  OE       6.17.1-surface-2 #2 PREEMPT(voluntary) 
+> [51971.839383] Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+> [51971.839384] Hardware name: Microsoft Corporation Surface Laptop 3/Surface Laptop 3, BIOS 19.101.140 04/11/2024
+> [51971.839385] Workqueue: events_freezable ieee80211_restart_work [mac80211]
+> [51971.839411] RIP: 0010:_sta_info_move_state+0x208/0x5a0 [mac80211]
+> [51971.839437] Code: 48 89 da e8 da b7 ff ff 85 c0 74 b8 80 3d 3b fe 20 00 00 75 af 89 c6 48 c7 c7 c8 5b 1b c1 c6 05 29 fe 20 00 01 e8 68 78 cd ca <0f> 0b eb 96 83 ea 02 83 e2 fd 0f 85 19 01 00 00 48 8b 43 50 4c 8d
+> [51971.839438] RSP: 0018:ffffcf9f641cb7b0 EFLAGS: 00010246
+> [51971.839440] RAX: 0000000000000000 RBX: ffff8e3a4ca32000 RCX: 0000000000000000
+> [51971.839441] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+> [51971.839442] RBP: ffffcf9f641cb7d8 R08: 0000000000000000 R09: 0000000000000000
+> [51971.839442] R10: 0000000000000000 R11: 0000000000000000 R12: 0000000000000003
+> [51971.839443] R13: ffff8e39a1eb8a80 R14: ffff8e3987398940 R15: ffff8e3a4ca32ae0
+> [51971.839444] FS:  0000000000000000(0000) GS:ffff8e3d4ca60000(0000) knlGS:0000000000000000
+> [51971.839445] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+> [51971.839446] CR2: ffffe507405d1f30 CR3: 0000000204636005 CR4: 0000000000772ef0
+> [51971.839447] PKRU: 55555554
+> [51971.839448] Call Trace:
+> [51971.839449]  <TASK>
+> [51971.839451]  __sta_info_destroy_part2+0x1d3/0x1f0 [mac80211]
+> [51971.839479]  __sta_info_flush+0x175/0x200 [mac80211]
+> [51971.839507]  ieee80211_set_disassoc+0x79a/0x870 [mac80211]
+> [51971.839550]  ieee80211_mgd_deauth+0x125/0x4c0 [mac80211]
+> [51971.839590]  ieee80211_deauth+0x18/0x30 [mac80211]
+> [51971.839628]  cfg80211_mlme_deauth+0xa5/0x1e0 [cfg80211]
+> [51971.839675]  cfg80211_mlme_down+0x60/0x90 [cfg80211]
+> [51971.839706]  cfg80211_disconnect+0x195/0x200 [cfg80211]
+> [51971.839740]  cfg80211_leave+0x147/0x1c0 [cfg80211]
+> [51971.839763]  cfg80211_netdev_notifier_call+0x13e/0x500 [cfg80211]
+> [51971.839785]  ? psi_task_switch+0x10a/0x2a0
+> [51971.839788]  ? raw_spin_rq_unlock+0x10/0x40
+> [51971.839792]  ? __dev_printk+0x39/0xa0
+> [51971.839795]  ? _dev_err+0x6b/0xa0
+> [51971.839799]  ? __iwl_err+0x163/0x170 [iwlwifi]
+> [51971.839813]  ? rtnl_is_locked+0x15/0x20
+> [51971.839817]  ? inetdev_event+0x45/0x730
+> [51971.839820]  ? packet_notifier+0x131/0x270
+> [51971.839830]  notifier_call_chain+0x62/0xe0
+> [51971.839833]  raw_notifier_call_chain+0x16/0x30
+> [51971.839834]  call_netdevice_notifiers_info+0x50/0x90
+> [51971.839837]  __dev_close_many+0x67/0x220
+> [51971.839840]  netif_close_many+0x98/0x170
+> [51971.839842]  netif_close+0x71/0x90
+> [51971.839845]  dev_close+0x2a/0x90
+> [51971.839847]  cfg80211_shutdown_all_interfaces+0x57/0x110 [cfg80211]
+> [51971.839871]  ieee80211_restart_work+0x13c/0x170 [mac80211]
+> [51971.839903]  process_one_work+0x19c/0x3f0
+> [51971.839906]  worker_thread+0x2ba/0x3d0
+> [51971.839909]  kthread+0x104/0x220
+> [51971.839911]  ? __pfx_worker_thread+0x10/0x10
+> [51971.839913]  ? __pfx_kthread+0x10/0x10
+> [51971.839915]  ret_from_fork+0x1ec/0x220
+> [51971.839916]  ? __pfx_kthread+0x10/0x10
+> [51971.839918]  ret_from_fork_asm+0x1a/0x30
+> [51971.839922]  </TASK>
+> [51971.839924] ---[ end trace 0000000000000000 ]---
+> [51971.839940] wlp0s20f3: failed to remove key (0, 88:9c:ad:04:e5:6e) from hardware (-5)
+> [51971.839981] ------------[ cut here ]------------
+> [51971.839982] WARNING: CPU: 5 PID: 74953 at net/mac80211/sta_info.c:1539 __sta_info_destroy_part2+0x1bb/0x1f0 [mac80211]
+> [51971.840016] Modules linked in: vhost_net vhost vhost_iotlb tap iptable_mangle xt_CHECKSUM xt_multiport iptable_nat nf_conntrack_netlink xt_nat veth xt_mark xt_MASQUERADE bridge stp llc xt_set ip_set nft_chain_nat nf_nat xfrm_user xfrm_algo ccm rfcomm cmac algif_hash algif_skcipher af_alg snd_seq_dummy snd_hrtimer snd_hda_codec_intelhdmi overlay bnep ip6t_REJECT nf_reject_ipv6 xt_hl zram ip6t_rt 842_decompress 842_compress ipt_REJECT lz4hc_compress nf_reject_ipv4 lz4_compress xt_LOG nf_log_syslog input_leds joydev nft_limit hid_multitouch xt_limit xt_addrtype xt_tcpudp xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 nft_compat snd_hda_codec_alc269 snd_hda_scodec_component snd_hda_codec_realtek_lib snd_hda_codec_generic snd_hda_intel nf_tables snd_sof_pci_intel_icl snd_sof_pci_intel_cnl snd_sof_intel_hda_generic nfnetlink soundwire_intel snd_sof_intel_hda_sdw_bpt binfmt_misc snd_sof_intel_hda_common snd_soc_hdac_hda snd_sof_intel_hda_mlink snd_sof_intel_hda snd_hda_codec_hdmi soundwire_cadence snd_sof_pci
+> [51971.840047]  snd_sof_xtensa_dsp snd_sof snd_sof_utils snd_soc_acpi_intel_match snd_soc_acpi_intel_sdca_quirks soundwire_generic_allocation snd_soc_acpi soundwire_bus snd_soc_sdca crc8 snd_soc_avs snd_soc_hda_codec snd_hda_ext_core snd_hda_codec hid_generic intel_uncore_frequency intel_uncore_frequency_common snd_hda_core mei_pxp mei_hdcp snd_intel_dspcfg surface_hid snd_intel_sdw_acpi ipts snd_hwdep surface_hid_core surface_platform_profile platform_profile hid intel_tcc_cooling surface_battery snd_soc_core surface_charger intel_rapl_msr snd_compress x86_pkg_temp_thermal ac97_bus snd_pcm_dmaengine intel_powerclamp snd_pcm coretemp snd_seq_midi iwlmvm snd_seq_midi_event nls_iso8859_1 snd_rawmidi gpio_keys kvm_intel surface_gpe processor_thermal_device_pci_legacy snd_seq btusb mac80211 processor_thermal_device kvm processor_thermal_wt_hint btrtl platform_temperature_control snd_seq_device btintel irqbypass processor_thermal_rfim libarc4 snd_timer btbcm btmtk processor_thermal_rapl rapl cmdlinepart iwlwifi spi_nor snd
+> [51971.840075]  intel_cstate intel_rapl_common mei_me intel_wmi_thunderbolt bluetooth mtd 8250_dw intel_pmc_core soundcore mei pmt_telemetry processor_thermal_wt_req cfg80211 processor_thermal_power_floor pmt_discovery pmt_class processor_thermal_mbox int3403_thermal intel_soc_dts_iosf int340x_thermal_zone surfacepro3_button intel_pmc_ssram_telemetry mac_hid int3400_thermal surface_aggregator_registry acpi_pad soc_button_array surface_hotplug surface_acpi_notify intel_vsec acpi_tad dptf_power acpi_thermal_rel sch_fq_codel kyber_iosched msr parport_pc ppdev lp parport efi_pstore ip_tables x_tables autofs4 dm_crypt raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor raid6_pq raid1 raid0 linear system76_io(OE) system76_acpi(OE) i915 nvme drm_buddy polyval_clmulni ttm ghash_clmulni_intel i2c_algo_bit nvme_core spi_intel_pci drm_display_helper nvme_keyring intel_lpss_pci spi_intel nvme_auth intel_lpss cec idma64 rc_core video surface_aggregator wmi crc_itu_t pinctrl_icelake aesni_intel
+> [51971.840110] CPU: 5 UID: 0 PID: 74953 Comm: kworker/5:1 Tainted: G        W  OE       6.17.1-surface-2 #2 PREEMPT(voluntary) 
+> [51971.840113] Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+> [51971.840116] Hardware name: Microsoft Corporation Surface Laptop 3/Surface Laptop 3, BIOS 19.101.140 04/11/2024
+> [51971.840119] Workqueue: events_freezable ieee80211_restart_work [mac80211]
+> [51971.840146] RIP: 0010:__sta_info_destroy_part2+0x1bb/0x1f0 [mac80211]
+> [51971.840172] Code: be d4 00 00 00 00 0f 84 07 ff ff ff 45 31 c0 b9 01 00 00 00 4c 89 f2 4c 89 ee 4c 89 e7 e8 3d 6c ff ff 85 c0 0f 84 e9 fe ff ff <0f> 0b e9 e2 fe ff ff 41 0f b6 d7 be 03 00 00 00 4c 89 f7 e8 5d b2
+> [51971.840174] RSP: 0018:ffffcf9f641cb7e8 EFLAGS: 00010282
+> [51971.840175] RAX: 00000000fffffffb RBX: 0000000000000000 RCX: 0000000000000000
+> [51971.840176] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+> [51971.840177] RBP: ffffcf9f641cb810 R08: 0000000000000000 R09: 0000000000000000
+> [51971.840178] R10: 0000000000000000 R11: 0000000000000000 R12: ffff8e3987398940
+> [51971.840178] R13: ffff8e39a1eb8a80 R14: ffff8e3a4ca32000 R15: 0000000000000000
+> [51971.840179] FS:  0000000000000000(0000) GS:ffff8e3d4ca60000(0000) knlGS:0000000000000000
+> [51971.840180] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+> [51971.840181] CR2: ffffe507405d1f30 CR3: 0000000204636005 CR4: 0000000000772ef0
+> [51971.840182] PKRU: 55555554
+> [51971.840183] Call Trace:
+> [51971.840184]  <TASK>
+> [51971.840185]  __sta_info_flush+0x175/0x200 [mac80211]
+> [51971.840212]  ieee80211_set_disassoc+0x79a/0x870 [mac80211]
+> [51971.840255]  ieee80211_mgd_deauth+0x125/0x4c0 [mac80211]
+> [51971.840295]  ieee80211_deauth+0x18/0x30 [mac80211]
+> [51971.840331]  cfg80211_mlme_deauth+0xa5/0x1e0 [cfg80211]
+> [51971.840364]  cfg80211_mlme_down+0x60/0x90 [cfg80211]
+> [51971.840392]  cfg80211_disconnect+0x195/0x200 [cfg80211]
+> [51971.840423]  cfg80211_leave+0x147/0x1c0 [cfg80211]
+> [51971.840444]  cfg80211_netdev_notifier_call+0x13e/0x500 [cfg80211]
+> [51971.840466]  ? psi_task_switch+0x10a/0x2a0
+> [51971.840469]  ? raw_spin_rq_unlock+0x10/0x40
+> [51971.840472]  ? __dev_printk+0x39/0xa0
+> [51971.840474]  ? _dev_err+0x6b/0xa0
+> [51971.840477]  ? __iwl_err+0x163/0x170 [iwlwifi]
+> [51971.840490]  ? rtnl_is_locked+0x15/0x20
+> [51971.840493]  ? inetdev_event+0x45/0x730
+> [51971.840495]  ? packet_notifier+0x131/0x270
+> [51971.840497]  notifier_call_chain+0x62/0xe0
+> [51971.840499]  raw_notifier_call_chain+0x16/0x30
+> [51971.840500]  call_netdevice_notifiers_info+0x50/0x90
+> [51971.840503]  __dev_close_many+0x67/0x220
+> [51971.840505]  netif_close_many+0x98/0x170
+> [51971.840508]  netif_close+0x71/0x90
+> [51971.840510]  dev_close+0x2a/0x90
+> [51971.840512]  cfg80211_shutdown_all_interfaces+0x57/0x110 [cfg80211]
+> [51971.840533]  ieee80211_restart_work+0x13c/0x170 [mac80211]
+> [51971.840561]  process_one_work+0x19c/0x3f0
+> [51971.840564]  worker_thread+0x2ba/0x3d0
+> [51971.840567]  kthread+0x104/0x220
+> [51971.840568]  ? __pfx_worker_thread+0x10/0x10
+> [51971.840571]  ? __pfx_kthread+0x10/0x10
+> [51971.840572]  ret_from_fork+0x1ec/0x220
+> [51971.840574]  ? __pfx_kthread+0x10/0x10
+> [51971.840575]  ret_from_fork_asm+0x1a/0x30
+> [51971.840578]  </TASK>
+> [51971.840579] ---[ end trace 0000000000000000 ]---
+> [51971.840633] ------------[ cut here ]------------
+> [51971.840634] WARNING: CPU: 5 PID: 74953 at net/mac80211/driver-ops.h:1038 ieee80211_del_chanctx+0x11c/0x130 [mac80211]
+> [51971.840677] Modules linked in: vhost_net vhost vhost_iotlb tap iptable_mangle xt_CHECKSUM xt_multiport iptable_nat nf_conntrack_netlink xt_nat veth xt_mark xt_MASQUERADE bridge stp llc xt_set ip_set nft_chain_nat nf_nat xfrm_user xfrm_algo ccm rfcomm cmac algif_hash algif_skcipher af_alg snd_seq_dummy snd_hrtimer snd_hda_codec_intelhdmi overlay bnep ip6t_REJECT nf_reject_ipv6 xt_hl zram ip6t_rt 842_decompress 842_compress ipt_REJECT lz4hc_compress nf_reject_ipv4 lz4_compress xt_LOG nf_log_syslog input_leds joydev nft_limit hid_multitouch xt_limit xt_addrtype xt_tcpudp xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 nft_compat snd_hda_codec_alc269 snd_hda_scodec_component snd_hda_codec_realtek_lib snd_hda_codec_generic snd_hda_intel nf_tables snd_sof_pci_intel_icl snd_sof_pci_intel_cnl snd_sof_intel_hda_generic nfnetlink soundwire_intel snd_sof_intel_hda_sdw_bpt binfmt_misc snd_sof_intel_hda_common snd_soc_hdac_hda snd_sof_intel_hda_mlink snd_sof_intel_hda snd_hda_codec_hdmi soundwire_cadence snd_sof_pci
+> [51971.840706]  snd_sof_xtensa_dsp snd_sof snd_sof_utils snd_soc_acpi_intel_match snd_soc_acpi_intel_sdca_quirks soundwire_generic_allocation snd_soc_acpi soundwire_bus snd_soc_sdca crc8 snd_soc_avs snd_soc_hda_codec snd_hda_ext_core snd_hda_codec hid_generic intel_uncore_frequency intel_uncore_frequency_common snd_hda_core mei_pxp mei_hdcp snd_intel_dspcfg surface_hid snd_intel_sdw_acpi ipts snd_hwdep surface_hid_core surface_platform_profile platform_profile hid intel_tcc_cooling surface_battery snd_soc_core surface_charger intel_rapl_msr snd_compress x86_pkg_temp_thermal ac97_bus snd_pcm_dmaengine intel_powerclamp snd_pcm coretemp snd_seq_midi iwlmvm snd_seq_midi_event nls_iso8859_1 snd_rawmidi gpio_keys kvm_intel surface_gpe processor_thermal_device_pci_legacy snd_seq btusb mac80211 processor_thermal_device kvm processor_thermal_wt_hint btrtl platform_temperature_control snd_seq_device btintel irqbypass processor_thermal_rfim libarc4 snd_timer btbcm btmtk processor_thermal_rapl rapl cmdlinepart iwlwifi spi_nor snd
+> [51971.840733]  intel_cstate intel_rapl_common mei_me intel_wmi_thunderbolt bluetooth mtd 8250_dw intel_pmc_core soundcore mei pmt_telemetry processor_thermal_wt_req cfg80211 processor_thermal_power_floor pmt_discovery pmt_class processor_thermal_mbox int3403_thermal intel_soc_dts_iosf int340x_thermal_zone surfacepro3_button intel_pmc_ssram_telemetry mac_hid int3400_thermal surface_aggregator_registry acpi_pad soc_button_array surface_hotplug surface_acpi_notify intel_vsec acpi_tad dptf_power acpi_thermal_rel sch_fq_codel kyber_iosched msr parport_pc ppdev lp parport efi_pstore ip_tables x_tables autofs4 dm_crypt raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor raid6_pq raid1 raid0 linear system76_io(OE) system76_acpi(OE) i915 nvme drm_buddy polyval_clmulni ttm ghash_clmulni_intel i2c_algo_bit nvme_core spi_intel_pci drm_display_helper nvme_keyring intel_lpss_pci spi_intel nvme_auth intel_lpss cec idma64 rc_core video surface_aggregator wmi crc_itu_t pinctrl_icelake aesni_intel
+> [51971.840766] CPU: 5 UID: 0 PID: 74953 Comm: kworker/5:1 Tainted: G        W  OE       6.17.1-surface-2 #2 PREEMPT(voluntary) 
+> [51971.840768] Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+> [51971.840769] Hardware name: Microsoft Corporation Surface Laptop 3/Surface Laptop 3, BIOS 19.101.140 04/11/2024
+> [51971.840770] Workqueue: events_freezable ieee80211_restart_work [mac80211]
+> [51971.840793] RIP: 0010:ieee80211_del_chanctx+0x11c/0x130 [mac80211]
+> [51971.840839] Code: ee e8 88 58 00 00 65 ff 0d 61 c6 fd cc 0f 85 2f ff ff ff 0f 1f 44 00 00 e9 25 ff ff ff 4c 89 ef e8 b9 6f fc ff e9 45 ff ff ff <0f> 0b e9 35 ff ff ff 66 66 2e 0f 1f 84 00 00 00 00 00 66 90 90 90
+> [51971.840840] RSP: 0018:ffffcf9f641cb808 EFLAGS: 00010246
+> [51971.840841] RAX: 0000000000000000 RBX: ffff8e399b449200 RCX: 0000000000000000
+> [51971.840842] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+> [51971.840843] RBP: ffffcf9f641cb828 R08: ffff8e399b449230 R09: 0000000000000000
+> [51971.840844] R10: ffff8e3987398940 R11: ffff8e399b449230 R12: ffff8e399b4492a0
+> [51971.840845] R13: ffff8e3987398940 R14: 0000000000000000 R15: ffff8e399b4492a0
+> [51971.840845] FS:  0000000000000000(0000) GS:ffff8e3d4ca60000(0000) knlGS:0000000000000000
+> [51971.840847] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+> [51971.840847] CR2: ffffe507405d1f30 CR3: 0000000204636005 CR4: 0000000000772ef0
+> [51971.840849] PKRU: 55555554
+> [51971.840849] Call Trace:
+> [51971.840850]  <TASK>
+> [51971.840854]  ieee80211_free_chanctx+0x93/0xe0 [mac80211]
+> [51971.840892]  __ieee80211_link_release_channel+0x119/0x150 [mac80211]
+> [51971.840933]  ieee80211_link_release_channel+0x2f/0x50 [mac80211]
+> [51971.840975]  ieee80211_set_disassoc+0x442/0x870 [mac80211]
+> [51971.841021]  ieee80211_mgd_deauth+0x125/0x4c0 [mac80211]
+> [51971.841059]  ieee80211_deauth+0x18/0x30 [mac80211]
+> [51971.841094]  cfg80211_mlme_deauth+0xa5/0x1e0 [cfg80211]
+> [51971.841127]  cfg80211_mlme_down+0x60/0x90 [cfg80211]
+> [51971.841156]  cfg80211_disconnect+0x195/0x200 [cfg80211]
+> [51971.841187]  cfg80211_leave+0x147/0x1c0 [cfg80211]
+> [51971.841209]  cfg80211_netdev_notifier_call+0x13e/0x500 [cfg80211]
+> [51971.841230]  ? psi_task_switch+0x10a/0x2a0
+> [51971.841232]  ? raw_spin_rq_unlock+0x10/0x40
+> [51971.841235]  ? __dev_printk+0x39/0xa0
+> [51971.841237]  ? _dev_err+0x6b/0xa0
+> [51971.841240]  ? __iwl_err+0x163/0x170 [iwlwifi]
+> [51971.841252]  ? rtnl_is_locked+0x15/0x20
+> [51971.841255]  ? inetdev_event+0x45/0x730
+> [51971.841257]  ? packet_notifier+0x131/0x270
+> [51971.841258]  notifier_call_chain+0x62/0xe0
+> [51971.841260]  raw_notifier_call_chain+0x16/0x30
+> [51971.841262]  call_netdevice_notifiers_info+0x50/0x90
+> [51971.841264]  __dev_close_many+0x67/0x220
+> [51971.841267]  netif_close_many+0x98/0x170
+> [51971.841269]  netif_close+0x71/0x90
+> [51971.841271]  dev_close+0x2a/0x90
+> [51971.841273]  cfg80211_shutdown_all_interfaces+0x57/0x110 [cfg80211]
+> [51971.841294]  ieee80211_restart_work+0x13c/0x170 [mac80211]
+> [51971.841318]  process_one_work+0x19c/0x3f0
+> [51971.841320]  worker_thread+0x2ba/0x3d0
+> [51971.841323]  kthread+0x104/0x220
+> [51971.841324]  ? __pfx_worker_thread+0x10/0x10
+> [51971.841327]  ? __pfx_kthread+0x10/0x10
+> [51971.841328]  ret_from_fork+0x1ec/0x220
+> [51971.841329]  ? __pfx_kthread+0x10/0x10
+> [51971.841331]  ret_from_fork_asm+0x1a/0x30
+> [51971.841334]  </TASK>
+> [51971.841334] ---[ end trace 0000000000000000 ]---
+> [51971.841344] wlp0s20f3: failed to remove key (1, ff:ff:ff:ff:ff:ff) from hardware (-5)
+> [51971.846906] ------------[ cut here ]------------
+> [51971.846908] WARNING: CPU: 5 PID: 74953 at net/mac80211/driver-ops.c:41 drv_stop+0x10b/0x120 [mac80211]
+> [51971.846942] Modules linked in: vhost_net vhost vhost_iotlb tap iptable_mangle xt_CHECKSUM xt_multiport iptable_nat nf_conntrack_netlink xt_nat veth xt_mark xt_MASQUERADE bridge stp llc xt_set ip_set nft_chain_nat nf_nat xfrm_user xfrm_algo ccm rfcomm cmac algif_hash algif_skcipher af_alg snd_seq_dummy snd_hrtimer snd_hda_codec_intelhdmi overlay bnep ip6t_REJECT nf_reject_ipv6 xt_hl zram ip6t_rt 842_decompress 842_compress ipt_REJECT lz4hc_compress nf_reject_ipv4 lz4_compress xt_LOG nf_log_syslog input_leds joydev nft_limit hid_multitouch xt_limit xt_addrtype xt_tcpudp xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 nft_compat snd_hda_codec_alc269 snd_hda_scodec_component snd_hda_codec_realtek_lib snd_hda_codec_generic snd_hda_intel nf_tables snd_sof_pci_intel_icl snd_sof_pci_intel_cnl snd_sof_intel_hda_generic nfnetlink soundwire_intel snd_sof_intel_hda_sdw_bpt binfmt_misc snd_sof_intel_hda_common snd_soc_hdac_hda snd_sof_intel_hda_mlink snd_sof_intel_hda snd_hda_codec_hdmi soundwire_cadence snd_sof_pci
+> [51971.846977]  snd_sof_xtensa_dsp snd_sof snd_sof_utils snd_soc_acpi_intel_match snd_soc_acpi_intel_sdca_quirks soundwire_generic_allocation snd_soc_acpi soundwire_bus snd_soc_sdca crc8 snd_soc_avs snd_soc_hda_codec snd_hda_ext_core snd_hda_codec hid_generic intel_uncore_frequency intel_uncore_frequency_common snd_hda_core mei_pxp mei_hdcp snd_intel_dspcfg surface_hid snd_intel_sdw_acpi ipts snd_hwdep surface_hid_core surface_platform_profile platform_profile hid intel_tcc_cooling surface_battery snd_soc_core surface_charger intel_rapl_msr snd_compress x86_pkg_temp_thermal ac97_bus snd_pcm_dmaengine intel_powerclamp snd_pcm coretemp snd_seq_midi iwlmvm snd_seq_midi_event nls_iso8859_1 snd_rawmidi gpio_keys kvm_intel surface_gpe processor_thermal_device_pci_legacy snd_seq btusb mac80211 processor_thermal_device kvm processor_thermal_wt_hint btrtl platform_temperature_control snd_seq_device btintel irqbypass processor_thermal_rfim libarc4 snd_timer btbcm btmtk processor_thermal_rapl rapl cmdlinepart iwlwifi spi_nor snd
+> [51971.847009]  intel_cstate intel_rapl_common mei_me intel_wmi_thunderbolt bluetooth mtd 8250_dw intel_pmc_core soundcore mei pmt_telemetry processor_thermal_wt_req cfg80211 processor_thermal_power_floor pmt_discovery pmt_class processor_thermal_mbox int3403_thermal intel_soc_dts_iosf int340x_thermal_zone surfacepro3_button intel_pmc_ssram_telemetry mac_hid int3400_thermal surface_aggregator_registry acpi_pad soc_button_array surface_hotplug surface_acpi_notify intel_vsec acpi_tad dptf_power acpi_thermal_rel sch_fq_codel kyber_iosched msr parport_pc ppdev lp parport efi_pstore ip_tables x_tables autofs4 dm_crypt raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor raid6_pq raid1 raid0 linear system76_io(OE) system76_acpi(OE) i915 nvme drm_buddy polyval_clmulni ttm ghash_clmulni_intel i2c_algo_bit nvme_core spi_intel_pci drm_display_helper nvme_keyring intel_lpss_pci spi_intel nvme_auth intel_lpss cec idma64 rc_core video surface_aggregator wmi crc_itu_t pinctrl_icelake aesni_intel
+> [51971.847051] CPU: 5 UID: 0 PID: 74953 Comm: kworker/5:1 Tainted: G        W  OE       6.17.1-surface-2 #2 PREEMPT(voluntary) 
+> [51971.847054] Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+> [51971.847055] Hardware name: Microsoft Corporation Surface Laptop 3/Surface Laptop 3, BIOS 19.101.140 04/11/2024
+> [51971.847056] Workqueue: events_freezable ieee80211_restart_work [mac80211]
+> [51971.847081] RIP: 0010:drv_stop+0x10b/0x120 [mac80211]
+> [51971.847105] Code: 85 c0 74 0f 48 8b 78 08 44 89 e2 48 89 de e8 ec a1 05 00 65 ff 0d 85 2f 03 cd 0f 85 2c ff ff ff 0f 1f 44 00 00 e9 22 ff ff ff <0f> 0b 5b 41 5c 5d 31 c0 31 d2 31 f6 31 ff e9 52 d3 dc cb 66 90 90
+> [51971.847106] RSP: 0018:ffffcf9f641cbbf0 EFLAGS: 00010246
+> [51971.847108] RAX: 0000000000000000 RBX: ffff8e3987398940 RCX: 0000000000000000
+> [51971.847109] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+> [51971.847109] RBP: ffffcf9f641cbc00 R08: 0000000000000000 R09: 0000000000000000
+> [51971.847110] R10: 0000000000000000 R11: 0000000000000000 R12: 0000000000000000
+> [51971.847111] R13: 0000000000000000 R14: ffff8e3987398940 R15: ffffcf9f641cbc60
+> [51971.847112] FS:  0000000000000000(0000) GS:ffff8e3d4ca60000(0000) knlGS:0000000000000000
+> [51971.847113] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+> [51971.847114] CR2: ffffe507405d1f30 CR3: 00000002aeab1006 CR4: 0000000000772ef0
+> [51971.847115] PKRU: 55555554
+> [51971.847115] Call Trace:
+> [51971.847117]  <TASK>
+> [51971.847119]  ieee80211_stop_device+0x81/0x90 [mac80211]
+> [51971.847158]  ieee80211_do_stop+0x72f/0x900 [mac80211]
+> [51971.847189]  ? packet_notifier+0x131/0x270
+> [51971.847192]  ? _raw_spin_unlock_bh+0x1d/0x30
+> [51971.847195]  ? dev_reset_queue+0x40/0xb0
+> [51971.847198]  ieee80211_stop+0x6c/0x100 [mac80211]
+> [51971.847230]  __dev_close_many+0x109/0x220
+> [51971.847233]  netif_close_many+0x98/0x170
+> [51971.847235]  netif_close+0x71/0x90
+> [51971.847237]  dev_close+0x2a/0x90
+> [51971.847240]  cfg80211_shutdown_all_interfaces+0x57/0x110 [cfg80211]
+> [51971.847269]  ieee80211_restart_work+0x13c/0x170 [mac80211]
+> [51971.847294]  process_one_work+0x19c/0x3f0
+> [51971.847297]  worker_thread+0x2ba/0x3d0
+> [51971.847300]  kthread+0x104/0x220
+> [51971.847302]  ? __pfx_worker_thread+0x10/0x10
+> [51971.847304]  ? __pfx_kthread+0x10/0x10
+> [51971.847306]  ret_from_fork+0x1ec/0x220
+> [51971.847307]  ? __pfx_kthread+0x10/0x10
+> [51971.847309]  ret_from_fork_asm+0x1a/0x30
+> [51971.847312]  </TASK>
+> [51971.847313] ---[ end trace 0000000000000000 ]---
+> [52007.339029] iwlwifi 0000:00:14.3: SecBoot CPU1 Status: 0x5803, CPU2 Status: 0x3
+> [52007.339066] iwlwifi 0000:00:14.3: WFPM_LMAC1_PD_NOTIFICATION: 0x0
+> [52007.339094] iwlwifi 0000:00:14.3: HPM_SECONDARY_DEVICE_STATE: 0x42
+> [52007.339125] iwlwifi 0000:00:14.3: WFPM_MAC_OTP_CFG7_ADDR: 0x0
+> [52007.339153] iwlwifi 0000:00:14.3: WFPM_MAC_OTP_CFG7_DATA: 0x0
+> [52007.339158] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0xa05c18
+> [52007.339164] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xa05c1c
+> [52007.339170] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 13 fired (delay=0ms).
+> [52007.339275] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52007.339279] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 6
+> [52007.339282] iwlwifi 0000:00:14.3: Loaded firmware version: 77.6eaf654b.0 Qu-c0-hr-b0-77.ucode
+> [52007.339286] iwlwifi 0000:00:14.3: 0x00000092 | ADVANCED_SYSASSERT          
+> [52007.339298] iwlwifi 0000:00:14.3: 0x000022F0 | trm_hw_status0
+> [52007.339302] iwlwifi 0000:00:14.3: 0x00000000 | trm_hw_status1
+> [52007.339305] iwlwifi 0000:00:14.3: 0x004C9742 | branchlink2
+> [52007.339307] iwlwifi 0000:00:14.3: 0x0001539C | interruptlink1
+> [52007.339310] iwlwifi 0000:00:14.3: 0x0001539C | interruptlink2
+> [52007.339313] iwlwifi 0000:00:14.3: 0x00014F4A | data1
+> [52007.339315] iwlwifi 0000:00:14.3: 0x0BADCAFE | data2
+> [52007.339318] iwlwifi 0000:00:14.3: 0x00000000 | data3
+> [52007.339321] iwlwifi 0000:00:14.3: 0x00000000 | beacon time
+> [52007.339324] iwlwifi 0000:00:14.3: 0x00000000 | tsf low
+> [52007.339326] iwlwifi 0000:00:14.3: 0x00000000 | tsf hi
+> [52007.339329] iwlwifi 0000:00:14.3: 0x00000000 | time gp1
+> [52007.339331] iwlwifi 0000:00:14.3: 0x0003C3D8 | time gp2
+> [52007.339334] iwlwifi 0000:00:14.3: 0x00000001 | uCode revision type
+> [52007.339337] iwlwifi 0000:00:14.3: 0x0000004D | uCode version major
+> [52007.339340] iwlwifi 0000:00:14.3: 0x6EAF654B | uCode version minor
+> [52007.339343] iwlwifi 0000:00:14.3: 0x00000332 | hw version
+> [52007.339346] iwlwifi 0000:00:14.3: 0x00C89002 | board version
+> [52007.339349] iwlwifi 0000:00:14.3: 0x00000000 | hcmd
+> [52007.339351] iwlwifi 0000:00:14.3: 0x00020000 | isr0
+> [52007.339354] iwlwifi 0000:00:14.3: 0x00000000 | isr1
+> [52007.339357] iwlwifi 0000:00:14.3: 0x08F00002 | isr2
+> [52007.339359] iwlwifi 0000:00:14.3: 0x00C0001C | isr3
+> [52007.339362] iwlwifi 0000:00:14.3: 0x00000000 | isr4
+> [52007.339365] iwlwifi 0000:00:14.3: 0x00000000 | last cmd Id
+> [52007.339367] iwlwifi 0000:00:14.3: 0x00014F4A | wait_event
+> [52007.339370] iwlwifi 0000:00:14.3: 0x00000000 | l2p_control
+> [52007.339373] iwlwifi 0000:00:14.3: 0x00000000 | l2p_duration
+> [52007.339375] iwlwifi 0000:00:14.3: 0x00000000 | l2p_mhvalid
+> [52007.339378] iwlwifi 0000:00:14.3: 0x00000000 | l2p_addr_match
+> [52007.339381] iwlwifi 0000:00:14.3: 0x0000004B | lmpm_pmg_sel
+> [52007.339383] iwlwifi 0000:00:14.3: 0x00000000 | timestamp
+> [52007.339386] iwlwifi 0000:00:14.3: 0x0000F81C | flow_handler
+> [52007.339431] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52007.339434] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 7
+> [52007.339437] iwlwifi 0000:00:14.3: 0x20000070 | NMI_INTERRUPT_LMAC_FATAL
+> [52007.339440] iwlwifi 0000:00:14.3: 0x00000000 | umac branchlink1
+> [52007.339443] iwlwifi 0000:00:14.3: 0x804561EA | umac branchlink2
+> [52007.339446] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink1
+> [52007.339449] iwlwifi 0000:00:14.3: 0x8045639A | umac interruptlink2
+> [52007.339451] iwlwifi 0000:00:14.3: 0x00000400 | umac data1
+> [52007.339454] iwlwifi 0000:00:14.3: 0x8045639A | umac data2
+> [52007.339457] iwlwifi 0000:00:14.3: 0x00000000 | umac data3
+> [52007.339459] iwlwifi 0000:00:14.3: 0x0000004D | umac major
+> [52007.339462] iwlwifi 0000:00:14.3: 0x6EAF654B | umac minor
+> [52007.339465] iwlwifi 0000:00:14.3: 0x0003C44F | frame pointer
+> [52007.339467] iwlwifi 0000:00:14.3: 0xC0887EE0 | stack pointer
+> [52007.339470] iwlwifi 0000:00:14.3: 0x00000000 | last host cmd
+> [52007.339472] iwlwifi 0000:00:14.3: 0x00200040 | isr status reg
+> [52007.339492] iwlwifi 0000:00:14.3: IML/ROM dump:
+> [52007.339495] iwlwifi 0000:00:14.3: 0x00000003 | IML/ROM error/state
+> [52007.339520] iwlwifi 0000:00:14.3: 0x00005803 | IML/ROM data1
+> [52007.339547] iwlwifi 0000:00:14.3: 0x00000080 | IML/ROM WFPM_AUTH_KEY_0
+> [52007.339571] iwlwifi 0000:00:14.3: Fseq Registers:
+> [52007.339590] iwlwifi 0000:00:14.3: 0x60000000 | FSEQ_ERROR_CODE
+> [52007.339595] iwlwifi 0000:00:14.3: 0x80290033 | FSEQ_TOP_INIT_VERSION
+> [52007.339614] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_CNVIO_INIT_VERSION
+> [52007.339635] iwlwifi 0000:00:14.3: 0x0000A492 | FSEQ_OTP_VERSION
+> [52007.339657] iwlwifi 0000:00:14.3: 0x00000003 | FSEQ_TOP_CONTENT_VERSION
+> [52007.339678] iwlwifi 0000:00:14.3: 0x4552414E | FSEQ_ALIVE_TOKEN
+> [52007.339683] iwlwifi 0000:00:14.3: 0x02000300 | FSEQ_CNVI_ID
+> [52007.339703] iwlwifi 0000:00:14.3: 0x01300504 | FSEQ_CNVR_ID
+> [52007.339708] iwlwifi 0000:00:14.3: 0x02000300 | CNVI_AUX_MISC_CHIP
+> [52007.339729] iwlwifi 0000:00:14.3: 0x01300504 | CNVR_AUX_MISC_CHIP
+> [52007.339751] iwlwifi 0000:00:14.3: 0x05B0905B | CNVR_SCU_SD_REGS_SD_REG_DIG_DCDC_VTRIM
+> [52007.339772] iwlwifi 0000:00:14.3: 0x0000025B | CNVR_SCU_SD_REGS_SD_REG_ACTIVE_VDIG_MIRROR
+> [52007.339792] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_PREV_CNVIO_INIT_VERSION
+> [52007.339813] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_WIFI_FSEQ_VERSION
+> [52007.339834] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_BT_FSEQ_VERSION
+> [52007.339839] iwlwifi 0000:00:14.3: 0x00000136 | FSEQ_CLASS_TP_VERSION
+> [52007.339865] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0x80473220
+> [52007.339884] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xd0
+> [52007.339891] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110
+> [52007.339897] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110
+> [52007.339913] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 13 fired (delay=0ms).
+> [52008.315027] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 4 fired (delay=0ms).
+> [52008.341268] iwlwifi 0000:00:14.3: mac start retry 0
+> [52010.410050] iwlwifi 0000:00:14.3: SecBoot CPU1 Status: 0x57e1, CPU2 Status: 0x3
+> [52010.410082] iwlwifi 0000:00:14.3: WFPM_LMAC1_PD_NOTIFICATION: 0x0
+> [52010.410109] iwlwifi 0000:00:14.3: HPM_SECONDARY_DEVICE_STATE: 0x42
+> [52010.410137] iwlwifi 0000:00:14.3: WFPM_MAC_OTP_CFG7_ADDR: 0x0
+> [52010.410188] iwlwifi 0000:00:14.3: WFPM_MAC_OTP_CFG7_DATA: 0x0
+> [52010.410191] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0xa05c18
+> [52010.410194] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xa05c1c
+> [52010.410198] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 13 fired (delay=0ms).
+> [52010.410300] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52010.410303] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 6
+> [52010.410306] iwlwifi 0000:00:14.3: Loaded firmware version: 77.6eaf654b.0 Qu-c0-hr-b0-77.ucode
+> [52010.410310] iwlwifi 0000:00:14.3: 0x00000092 | ADVANCED_SYSASSERT          
+> [52010.410314] iwlwifi 0000:00:14.3: 0x000022F0 | trm_hw_status0
+> [52010.410317] iwlwifi 0000:00:14.3: 0x00000000 | trm_hw_status1
+> [52010.410320] iwlwifi 0000:00:14.3: 0x004C9742 | branchlink2
+> [52010.410323] iwlwifi 0000:00:14.3: 0x0001539C | interruptlink1
+> [52010.410326] iwlwifi 0000:00:14.3: 0x0001539C | interruptlink2
+> [52010.410329] iwlwifi 0000:00:14.3: 0x00014F4A | data1
+> [52010.410331] iwlwifi 0000:00:14.3: 0x0BADCAFE | data2
+> [52010.410334] iwlwifi 0000:00:14.3: 0x00000000 | data3
+> [52010.410337] iwlwifi 0000:00:14.3: 0x00000000 | beacon time
+> [52010.410340] iwlwifi 0000:00:14.3: 0x00000000 | tsf low
+> [52010.410342] iwlwifi 0000:00:14.3: 0x00000000 | tsf hi
+> [52010.410345] iwlwifi 0000:00:14.3: 0x00000000 | time gp1
+> [52010.410348] iwlwifi 0000:00:14.3: 0x0003C323 | time gp2
+> [52010.410350] iwlwifi 0000:00:14.3: 0x00000001 | uCode revision type
+> [52010.410353] iwlwifi 0000:00:14.3: 0x0000004D | uCode version major
+> [52010.410356] iwlwifi 0000:00:14.3: 0x6EAF654B | uCode version minor
+> [52010.410359] iwlwifi 0000:00:14.3: 0x00000332 | hw version
+> [52010.410362] iwlwifi 0000:00:14.3: 0x00C89002 | board version
+> [52010.410365] iwlwifi 0000:00:14.3: 0x00000000 | hcmd
+> [52010.410367] iwlwifi 0000:00:14.3: 0x00020000 | isr0
+> [52010.410370] iwlwifi 0000:00:14.3: 0x00000000 | isr1
+> [52010.410373] iwlwifi 0000:00:14.3: 0x08F00002 | isr2
+> [52010.410375] iwlwifi 0000:00:14.3: 0x00C0001C | isr3
+> [52010.410378] iwlwifi 0000:00:14.3: 0x00000000 | isr4
+> [52010.410381] iwlwifi 0000:00:14.3: 0x00000000 | last cmd Id
+> [52010.410383] iwlwifi 0000:00:14.3: 0x00014F4A | wait_event
+> [52010.410386] iwlwifi 0000:00:14.3: 0x00000000 | l2p_control
+> [52010.410389] iwlwifi 0000:00:14.3: 0x00000000 | l2p_duration
+> [52010.410391] iwlwifi 0000:00:14.3: 0x00000000 | l2p_mhvalid
+> [52010.410394] iwlwifi 0000:00:14.3: 0x00000000 | l2p_addr_match
+> [52010.410397] iwlwifi 0000:00:14.3: 0x0000004B | lmpm_pmg_sel
+> [52010.410399] iwlwifi 0000:00:14.3: 0x00000000 | timestamp
+> [52010.410402] iwlwifi 0000:00:14.3: 0x0000F81C | flow_handler
+> [52010.410446] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52010.410449] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 7
+> [52010.410452] iwlwifi 0000:00:14.3: 0x20000070 | NMI_INTERRUPT_LMAC_FATAL
+> [52010.410455] iwlwifi 0000:00:14.3: 0x00000000 | umac branchlink1
+> [52010.410458] iwlwifi 0000:00:14.3: 0x804561EA | umac branchlink2
+> [52010.410461] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink1
+> [52010.410464] iwlwifi 0000:00:14.3: 0x8045639A | umac interruptlink2
+> [52010.410467] iwlwifi 0000:00:14.3: 0x00000400 | umac data1
+> [52010.410469] iwlwifi 0000:00:14.3: 0x8045639A | umac data2
+> [52010.410472] iwlwifi 0000:00:14.3: 0x00000000 | umac data3
+> [52010.410475] iwlwifi 0000:00:14.3: 0x0000004D | umac major
+> [52010.410477] iwlwifi 0000:00:14.3: 0x6EAF654B | umac minor
+> [52010.410480] iwlwifi 0000:00:14.3: 0x0003C39B | frame pointer
+> [52010.410483] iwlwifi 0000:00:14.3: 0xC0887EE0 | stack pointer
+> [52010.410485] iwlwifi 0000:00:14.3: 0x00000000 | last host cmd
+> [52010.410488] iwlwifi 0000:00:14.3: 0x00200040 | isr status reg
+> [52010.410511] iwlwifi 0000:00:14.3: IML/ROM dump:
+> [52010.410514] iwlwifi 0000:00:14.3: 0x00000003 | IML/ROM error/state
+> [52010.410538] iwlwifi 0000:00:14.3: 0x000057E1 | IML/ROM data1
+> [52010.410565] iwlwifi 0000:00:14.3: 0x00000080 | IML/ROM WFPM_AUTH_KEY_0
+> [52010.410589] iwlwifi 0000:00:14.3: Fseq Registers:
+> [52010.410608] iwlwifi 0000:00:14.3: 0x60000000 | FSEQ_ERROR_CODE
+> [52010.410629] iwlwifi 0000:00:14.3: 0x80290033 | FSEQ_TOP_INIT_VERSION
+> [52010.410650] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_CNVIO_INIT_VERSION
+> [52010.410671] iwlwifi 0000:00:14.3: 0x0000A492 | FSEQ_OTP_VERSION
+> [52010.410692] iwlwifi 0000:00:14.3: 0x00000003 | FSEQ_TOP_CONTENT_VERSION
+> [52010.410713] iwlwifi 0000:00:14.3: 0x4552414E | FSEQ_ALIVE_TOKEN
+> [52010.410734] iwlwifi 0000:00:14.3: 0x02000300 | FSEQ_CNVI_ID
+> [52010.410739] iwlwifi 0000:00:14.3: 0x01300504 | FSEQ_CNVR_ID
+> [52010.410759] iwlwifi 0000:00:14.3: 0x02000300 | CNVI_AUX_MISC_CHIP
+> [52010.410766] iwlwifi 0000:00:14.3: 0x01300504 | CNVR_AUX_MISC_CHIP
+> [52010.410787] iwlwifi 0000:00:14.3: 0x05B0905B | CNVR_SCU_SD_REGS_SD_REG_DIG_DCDC_VTRIM
+> [52010.410809] iwlwifi 0000:00:14.3: 0x0000025B | CNVR_SCU_SD_REGS_SD_REG_ACTIVE_VDIG_MIRROR
+> [52010.410829] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_PREV_CNVIO_INIT_VERSION
+> [52010.410850] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_WIFI_FSEQ_VERSION
+> [52010.410871] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_BT_FSEQ_VERSION
+> [52010.410876] iwlwifi 0000:00:14.3: 0x00000136 | FSEQ_CLASS_TP_VERSION
+> [52010.410903] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0x80473220
+> [52010.410945] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xd0
+> [52010.410974] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110
+> [52010.410980] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110
+> [52010.410985] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 13 fired (delay=0ms).
+> [52011.373535] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 4 fired (delay=0ms).
+> [52011.400161] iwlwifi 0000:00:14.3: mac start retry 0
+> [52064.795186] iwlwifi 0000:00:14.3: Microcode SW error detected. Restarting 0x0.
+> [52064.795274] iwlwifi 0000:00:14.3: Failed to start RT ucode: -5
+> [52064.795285] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 13 fired (delay=0ms).
+> [52064.795311] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52064.795315] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 6
+> [52064.795319] iwlwifi 0000:00:14.3: Loaded firmware version: 77.6eaf654b.0 Qu-c0-hr-b0-77.ucode
+> [52064.795323] iwlwifi 0000:00:14.3: 0x00000091 | ADVANCED_SYSASSERT          
+> [52064.795327] iwlwifi 0000:00:14.3: 0x0000A2F0 | trm_hw_status0
+> [52064.795339] iwlwifi 0000:00:14.3: 0x00000000 | trm_hw_status1
+> [52064.795342] iwlwifi 0000:00:14.3: 0x004C9742 | branchlink2
+> [52064.795345] iwlwifi 0000:00:14.3: 0x004C5220 | interruptlink1
+> [52064.795348] iwlwifi 0000:00:14.3: 0x004C5220 | interruptlink2
+> [52064.795350] iwlwifi 0000:00:14.3: 0x00013186 | data1
+> [52064.795353] iwlwifi 0000:00:14.3: 0x00010000 | data2
+> [52064.795356] iwlwifi 0000:00:14.3: 0x00000000 | data3
+> [52064.795358] iwlwifi 0000:00:14.3: 0x00000000 | beacon time
+> [52064.795361] iwlwifi 0000:00:14.3: 0x00000000 | tsf low
+> [52064.795364] iwlwifi 0000:00:14.3: 0x00000000 | tsf hi
+> [52064.795366] iwlwifi 0000:00:14.3: 0x00000000 | time gp1
+> [52064.795369] iwlwifi 0000:00:14.3: 0x0001AE4F | time gp2
+> [52064.795371] iwlwifi 0000:00:14.3: 0x00000001 | uCode revision type
+> [52064.795374] iwlwifi 0000:00:14.3: 0x0000004D | uCode version major
+> [52064.795377] iwlwifi 0000:00:14.3: 0x6EAF654B | uCode version minor
+> [52064.795380] iwlwifi 0000:00:14.3: 0x00000332 | hw version
+> [52064.795383] iwlwifi 0000:00:14.3: 0x00C89002 | board version
+> [52064.795386] iwlwifi 0000:00:14.3: 0x8014FD28 | hcmd
+> [52064.795388] iwlwifi 0000:00:14.3: 0xE2920000 | isr0
+> [52064.795391] iwlwifi 0000:00:14.3: 0x00000000 | isr1
+> [52064.795394] iwlwifi 0000:00:14.3: 0x08F00002 | isr2
+> [52064.795396] iwlwifi 0000:00:14.3: 0x00C0000C | isr3
+> [52064.795399] iwlwifi 0000:00:14.3: 0x00000000 | isr4
+> [52064.795402] iwlwifi 0000:00:14.3: 0x00000000 | last cmd Id
+> [52064.795404] iwlwifi 0000:00:14.3: 0x00013186 | wait_event
+> [52064.795407] iwlwifi 0000:00:14.3: 0x00000000 | l2p_control
+> [52064.795410] iwlwifi 0000:00:14.3: 0x00000000 | l2p_duration
+> [52064.795412] iwlwifi 0000:00:14.3: 0x00000000 | l2p_mhvalid
+> [52064.795415] iwlwifi 0000:00:14.3: 0x00000000 | l2p_addr_match
+> [52064.795417] iwlwifi 0000:00:14.3: 0x00000000 | lmpm_pmg_sel
+> [52064.795420] iwlwifi 0000:00:14.3: 0x00000000 | timestamp
+> [52064.795423] iwlwifi 0000:00:14.3: 0x00000020 | flow_handler
+> [52064.795466] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52064.795469] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 7
+> [52064.795472] iwlwifi 0000:00:14.3: 0x20000070 | NMI_INTERRUPT_LMAC_FATAL
+> [52064.795476] iwlwifi 0000:00:14.3: 0x00000000 | umac branchlink1
+> [52064.795478] iwlwifi 0000:00:14.3: 0x804561EA | umac branchlink2
+> [52064.795481] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink1
+> [52064.795484] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink2
+> [52064.795487] iwlwifi 0000:00:14.3: 0x00000400 | umac data1
+> [52064.795489] iwlwifi 0000:00:14.3: 0x80473712 | umac data2
+> [52064.795492] iwlwifi 0000:00:14.3: 0x00000000 | umac data3
+> [52064.795495] iwlwifi 0000:00:14.3: 0x0000004D | umac major
+> [52064.795497] iwlwifi 0000:00:14.3: 0x6EAF654B | umac minor
+> [52064.795500] iwlwifi 0000:00:14.3: 0x0001AEE8 | frame pointer
+> [52064.795503] iwlwifi 0000:00:14.3: 0xC0886260 | stack pointer
+> [52064.795505] iwlwifi 0000:00:14.3: 0x00010C00 | last host cmd
+> [52064.795508] iwlwifi 0000:00:14.3: 0x00000000 | isr status reg
+> [52064.795531] iwlwifi 0000:00:14.3: IML/ROM dump:
+> [52064.795533] iwlwifi 0000:00:14.3: 0x00000003 | IML/ROM error/state
+> [52064.795558] iwlwifi 0000:00:14.3: 0x00005841 | IML/ROM data1
+> [52064.795585] iwlwifi 0000:00:14.3: 0x00000080 | IML/ROM WFPM_AUTH_KEY_0
+> [52064.795609] iwlwifi 0000:00:14.3: Fseq Registers:
+> [52064.795629] iwlwifi 0000:00:14.3: 0x60000000 | FSEQ_ERROR_CODE
+> [52064.795650] iwlwifi 0000:00:14.3: 0x80290033 | FSEQ_TOP_INIT_VERSION
+> [52064.795655] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_CNVIO_INIT_VERSION
+> [52064.795675] iwlwifi 0000:00:14.3: 0x0000A492 | FSEQ_OTP_VERSION
+> [52064.795696] iwlwifi 0000:00:14.3: 0x00000003 | FSEQ_TOP_CONTENT_VERSION
+> [52064.795722] iwlwifi 0000:00:14.3: 0x4552414E | FSEQ_ALIVE_TOKEN
+> [52064.795743] iwlwifi 0000:00:14.3: 0x02000300 | FSEQ_CNVI_ID
+> [52064.795747] iwlwifi 0000:00:14.3: 0x01300504 | FSEQ_CNVR_ID
+> [52064.795767] iwlwifi 0000:00:14.3: 0x02000300 | CNVI_AUX_MISC_CHIP
+> [52064.795774] iwlwifi 0000:00:14.3: 0x01300504 | CNVR_AUX_MISC_CHIP
+> [52064.795796] iwlwifi 0000:00:14.3: 0x05B0905B | CNVR_SCU_SD_REGS_SD_REG_DIG_DCDC_VTRIM
+> [52064.795817] iwlwifi 0000:00:14.3: 0x0000025B | CNVR_SCU_SD_REGS_SD_REG_ACTIVE_VDIG_MIRROR
+> [52064.795837] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_PREV_CNVIO_INIT_VERSION
+> [52064.795858] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_WIFI_FSEQ_VERSION
+> [52064.795879] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_BT_FSEQ_VERSION
+> [52064.795901] iwlwifi 0000:00:14.3: 0x00000136 | FSEQ_CLASS_TP_VERSION
+> [52064.795929] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0x80473220
+> [52064.795948] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xd0
+> [52065.416091] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 4 fired (delay=0ms).
+> [52066.166808] iwlwifi 0000:00:14.3: Microcode SW error detected. Restarting 0x0.
+> [52066.166856] iwlwifi 0000:00:14.3: Failed to start RT ucode: -5
+> [52066.166867] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 13 fired (delay=0ms).
+> [52066.166909] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52066.166914] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 6
+> [52066.166919] iwlwifi 0000:00:14.3: Loaded firmware version: 77.6eaf654b.0 Qu-c0-hr-b0-77.ucode
+> [52066.166923] iwlwifi 0000:00:14.3: 0x00000090 | ADVANCED_SYSASSERT          
+> [52066.166929] iwlwifi 0000:00:14.3: 0x0000A2F0 | trm_hw_status0
+> [52066.166932] iwlwifi 0000:00:14.3: 0x00000000 | trm_hw_status1
+> [52066.166936] iwlwifi 0000:00:14.3: 0x004C9742 | branchlink2
+> [52066.166940] iwlwifi 0000:00:14.3: 0x004C4394 | interruptlink1
+> [52066.166944] iwlwifi 0000:00:14.3: 0x004C4394 | interruptlink2
+> [52066.166947] iwlwifi 0000:00:14.3: 0x00013186 | data1
+> [52066.166951] iwlwifi 0000:00:14.3: 0x00000000 | data2
+> [52066.166954] iwlwifi 0000:00:14.3: 0x00000000 | data3
+> [52066.166957] iwlwifi 0000:00:14.3: 0x00000000 | beacon time
+> [52066.166961] iwlwifi 0000:00:14.3: 0x00000000 | tsf low
+> [52066.166964] iwlwifi 0000:00:14.3: 0x00000000 | tsf hi
+> [52066.166968] iwlwifi 0000:00:14.3: 0x00000000 | time gp1
+> [52066.166971] iwlwifi 0000:00:14.3: 0x000503B3 | time gp2
+> [52066.166975] iwlwifi 0000:00:14.3: 0x00000001 | uCode revision type
+> [52066.166978] iwlwifi 0000:00:14.3: 0x0000004D | uCode version major
+> [52066.166982] iwlwifi 0000:00:14.3: 0x6EAF654B | uCode version minor
+> [52066.166986] iwlwifi 0000:00:14.3: 0x00000332 | hw version
+> [52066.166989] iwlwifi 0000:00:14.3: 0x00C89002 | board version
+> [52066.166993] iwlwifi 0000:00:14.3: 0x8017FD28 | hcmd
+> [52066.167005] iwlwifi 0000:00:14.3: 0x20028000 | isr0
+> [52066.167008] iwlwifi 0000:00:14.3: 0x00000000 | isr1
+> [52066.167012] iwlwifi 0000:00:14.3: 0x08F00002 | isr2
+> [52066.167015] iwlwifi 0000:00:14.3: 0x04C0001C | isr3
+> [52066.167019] iwlwifi 0000:00:14.3: 0x00000000 | isr4
+> [52066.167036] iwlwifi 0000:00:14.3: 0x00000000 | last cmd Id
+> [52066.167040] iwlwifi 0000:00:14.3: 0x00013186 | wait_event
+> [52066.167043] iwlwifi 0000:00:14.3: 0x00000000 | l2p_control
+> [52066.167047] iwlwifi 0000:00:14.3: 0x00000000 | l2p_duration
+> [52066.167050] iwlwifi 0000:00:14.3: 0x00000000 | l2p_mhvalid
+> [52066.167054] iwlwifi 0000:00:14.3: 0x00000000 | l2p_addr_match
+> [52066.167057] iwlwifi 0000:00:14.3: 0x00000009 | lmpm_pmg_sel
+> [52066.167061] iwlwifi 0000:00:14.3: 0x00000000 | timestamp
+> [52066.167064] iwlwifi 0000:00:14.3: 0x00000020 | flow_handler
+> [52066.167127] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52066.167131] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 7
+> [52066.167135] iwlwifi 0000:00:14.3: 0x20000070 | NMI_INTERRUPT_LMAC_FATAL
+> [52066.167140] iwlwifi 0000:00:14.3: 0x00000000 | umac branchlink1
+> [52066.167144] iwlwifi 0000:00:14.3: 0x804561EA | umac branchlink2
+> [52066.167147] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink1
+> [52066.167151] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink2
+> [52066.167155] iwlwifi 0000:00:14.3: 0x00000400 | umac data1
+> [52066.167158] iwlwifi 0000:00:14.3: 0x80473712 | umac data2
+> [52066.167162] iwlwifi 0000:00:14.3: 0x00000000 | umac data3
+> [52066.167165] iwlwifi 0000:00:14.3: 0x0000004D | umac major
+> [52066.167169] iwlwifi 0000:00:14.3: 0x6EAF654B | umac minor
+> [52066.167172] iwlwifi 0000:00:14.3: 0x00050426 | frame pointer
+> [52066.167176] iwlwifi 0000:00:14.3: 0xC0886260 | stack pointer
+> [52066.167179] iwlwifi 0000:00:14.3: 0x00010C00 | last host cmd
+> [52066.167183] iwlwifi 0000:00:14.3: 0x00000000 | isr status reg
+> [52066.167207] iwlwifi 0000:00:14.3: IML/ROM dump:
+> [52066.167210] iwlwifi 0000:00:14.3: 0x00000003 | IML/ROM error/state
+> [52066.167235] iwlwifi 0000:00:14.3: 0x00005827 | IML/ROM data1
+> [52066.167262] iwlwifi 0000:00:14.3: 0x00000080 | IML/ROM WFPM_AUTH_KEY_0
+> [52066.167286] iwlwifi 0000:00:14.3: Fseq Registers:
+> [52066.167306] iwlwifi 0000:00:14.3: 0x60000000 | FSEQ_ERROR_CODE
+> [52066.167327] iwlwifi 0000:00:14.3: 0x80290033 | FSEQ_TOP_INIT_VERSION
+> [52066.167348] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_CNVIO_INIT_VERSION
+> [52066.167370] iwlwifi 0000:00:14.3: 0x0000A492 | FSEQ_OTP_VERSION
+> [52066.167391] iwlwifi 0000:00:14.3: 0x00000003 | FSEQ_TOP_CONTENT_VERSION
+> [52066.167412] iwlwifi 0000:00:14.3: 0x4552414E | FSEQ_ALIVE_TOKEN
+> [52066.167434] iwlwifi 0000:00:14.3: 0x02000300 | FSEQ_CNVI_ID
+> [52066.167456] iwlwifi 0000:00:14.3: 0x01300504 | FSEQ_CNVR_ID
+> [52066.167477] iwlwifi 0000:00:14.3: 0x02000300 | CNVI_AUX_MISC_CHIP
+> [52066.167501] iwlwifi 0000:00:14.3: 0x01300504 | CNVR_AUX_MISC_CHIP
+> [52066.167522] iwlwifi 0000:00:14.3: 0x05B0905B | CNVR_SCU_SD_REGS_SD_REG_DIG_DCDC_VTRIM
+> [52066.167544] iwlwifi 0000:00:14.3: 0x0000025B | CNVR_SCU_SD_REGS_SD_REG_ACTIVE_VDIG_MIRROR
+> [52066.167564] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_PREV_CNVIO_INIT_VERSION
+> [52066.167585] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_WIFI_FSEQ_VERSION
+> [52066.167606] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_BT_FSEQ_VERSION
+> [52066.167628] iwlwifi 0000:00:14.3: 0x00000136 | FSEQ_CLASS_TP_VERSION
+> [52066.167656] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0x80473220
+> [52066.167675] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xd0
+> [52066.777261] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 4 fired (delay=0ms).
+> [52070.058145] iwlwifi 0000:00:14.3: SecBoot CPU1 Status: 0x57f5, CPU2 Status: 0x3
+> [52070.058182] iwlwifi 0000:00:14.3: WFPM_LMAC1_PD_NOTIFICATION: 0x0
+> [52070.058209] iwlwifi 0000:00:14.3: HPM_SECONDARY_DEVICE_STATE: 0x42
+> [52070.058237] iwlwifi 0000:00:14.3: WFPM_MAC_OTP_CFG7_ADDR: 0x0
+> [52070.058265] iwlwifi 0000:00:14.3: WFPM_MAC_OTP_CFG7_DATA: 0x0
+> [52070.058270] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0xa05c18
+> [52070.058276] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xa05c1c
+> [52070.058282] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 13 fired (delay=0ms).
+> [52070.058389] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52070.058393] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 6
+> [52070.058399] iwlwifi 0000:00:14.3: Loaded firmware version: 77.6eaf654b.0 Qu-c0-hr-b0-77.ucode
+> [52070.058404] iwlwifi 0000:00:14.3: 0x00000090 | ADVANCED_SYSASSERT          
+> [52070.058410] iwlwifi 0000:00:14.3: 0x000022F0 | trm_hw_status0
+> [52070.058415] iwlwifi 0000:00:14.3: 0x00000000 | trm_hw_status1
+> [52070.058420] iwlwifi 0000:00:14.3: 0x004C9742 | branchlink2
+> [52070.058426] iwlwifi 0000:00:14.3: 0x0001A2AA | interruptlink1
+> [52070.058431] iwlwifi 0000:00:14.3: 0x0001A2AA | interruptlink2
+> [52070.058436] iwlwifi 0000:00:14.3: 0x00014F4A | data1
+> [52070.058441] iwlwifi 0000:00:14.3: 0x00000000 | data2
+> [52070.058446] iwlwifi 0000:00:14.3: 0x00000000 | data3
+> [52070.058450] iwlwifi 0000:00:14.3: 0x00000000 | beacon time
+> [52070.058455] iwlwifi 0000:00:14.3: 0x00000000 | tsf low
+> [52070.058459] iwlwifi 0000:00:14.3: 0x00000000 | tsf hi
+> [52070.058463] iwlwifi 0000:00:14.3: 0x00000000 | time gp1
+> [52070.058467] iwlwifi 0000:00:14.3: 0x0003C389 | time gp2
+> [52070.058471] iwlwifi 0000:00:14.3: 0x00000001 | uCode revision type
+> [52070.058476] iwlwifi 0000:00:14.3: 0x0000004D | uCode version major
+> [52070.058481] iwlwifi 0000:00:14.3: 0x6EAF654B | uCode version minor
+> [52070.058486] iwlwifi 0000:00:14.3: 0x00000332 | hw version
+> [52070.058491] iwlwifi 0000:00:14.3: 0x00C89002 | board version
+> [52070.058496] iwlwifi 0000:00:14.3: 0x00000000 | hcmd
+> [52070.058501] iwlwifi 0000:00:14.3: 0x00020000 | isr0
+> [52070.058506] iwlwifi 0000:00:14.3: 0x00080000 | isr1
+> [52070.058510] iwlwifi 0000:00:14.3: 0x08F00002 | isr2
+> [52070.058515] iwlwifi 0000:00:14.3: 0x00C0001C | isr3
+> [52070.058520] iwlwifi 0000:00:14.3: 0x00000001 | isr4
+> [52070.058525] iwlwifi 0000:00:14.3: 0x00000000 | last cmd Id
+> [52070.058529] iwlwifi 0000:00:14.3: 0x00014F4A | wait_event
+> [52070.058534] iwlwifi 0000:00:14.3: 0x00000000 | l2p_control
+> [52070.058539] iwlwifi 0000:00:14.3: 0x00000000 | l2p_duration
+> [52070.058544] iwlwifi 0000:00:14.3: 0x00000000 | l2p_mhvalid
+> [52070.058549] iwlwifi 0000:00:14.3: 0x00000000 | l2p_addr_match
+> [52070.058554] iwlwifi 0000:00:14.3: 0x0000000B | lmpm_pmg_sel
+> [52070.058559] iwlwifi 0000:00:14.3: 0x00000000 | timestamp
+> [52070.058562] iwlwifi 0000:00:14.3: 0x0000F81C | flow_handler
+> [52070.058610] iwlwifi 0000:00:14.3: Start IWL Error Log Dump:
+> [52070.058615] iwlwifi 0000:00:14.3: Transport status: 0x00000242, valid: 7
+> [52070.058620] iwlwifi 0000:00:14.3: 0x20000070 | NMI_INTERRUPT_LMAC_FATAL
+> [52070.058627] iwlwifi 0000:00:14.3: 0x00000000 | umac branchlink1
+> [52070.058631] iwlwifi 0000:00:14.3: 0x804561EA | umac branchlink2
+> [52070.058635] iwlwifi 0000:00:14.3: 0x80473712 | umac interruptlink1
+> [52070.058640] iwlwifi 0000:00:14.3: 0x80456398 | umac interruptlink2
+> [52070.058644] iwlwifi 0000:00:14.3: 0x00000400 | umac data1
+> [52070.058649] iwlwifi 0000:00:14.3: 0x80456398 | umac data2
+> [52070.058653] iwlwifi 0000:00:14.3: 0x00000000 | umac data3
+> [52070.058658] iwlwifi 0000:00:14.3: 0x0000004D | umac major
+> [52070.058662] iwlwifi 0000:00:14.3: 0x6EAF654B | umac minor
+> [52070.058666] iwlwifi 0000:00:14.3: 0x0003C3F8 | frame pointer
+> [52070.058671] iwlwifi 0000:00:14.3: 0xC0887EE4 | stack pointer
+> [52070.058675] iwlwifi 0000:00:14.3: 0x00000000 | last host cmd
+> [52070.058679] iwlwifi 0000:00:14.3: 0x00200040 | isr status reg
+> [52070.058707] iwlwifi 0000:00:14.3: IML/ROM dump:
+> [52070.058709] iwlwifi 0000:00:14.3: 0x00000003 | IML/ROM error/state
+> [52070.058733] iwlwifi 0000:00:14.3: 0x000057F5 | IML/ROM data1
+> [52070.058760] iwlwifi 0000:00:14.3: 0x00000080 | IML/ROM WFPM_AUTH_KEY_0
+> [52070.058784] iwlwifi 0000:00:14.3: Fseq Registers:
+> [52070.058803] iwlwifi 0000:00:14.3: 0x60000000 | FSEQ_ERROR_CODE
+> [52070.058808] iwlwifi 0000:00:14.3: 0x80290033 | FSEQ_TOP_INIT_VERSION
+> [52070.058828] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_CNVIO_INIT_VERSION
+> [52070.058849] iwlwifi 0000:00:14.3: 0x0000A492 | FSEQ_OTP_VERSION
+> [52070.058854] iwlwifi 0000:00:14.3: 0x00000003 | FSEQ_TOP_CONTENT_VERSION
+> [52070.058874] iwlwifi 0000:00:14.3: 0x4552414E | FSEQ_ALIVE_TOKEN
+> [52070.058878] iwlwifi 0000:00:14.3: 0x02000300 | FSEQ_CNVI_ID
+> [52070.058898] iwlwifi 0000:00:14.3: 0x01300504 | FSEQ_CNVR_ID
+> [52070.058902] iwlwifi 0000:00:14.3: 0x02000300 | CNVI_AUX_MISC_CHIP
+> [52070.058924] iwlwifi 0000:00:14.3: 0x01300504 | CNVR_AUX_MISC_CHIP
+> [52070.058946] iwlwifi 0000:00:14.3: 0x05B0905B | CNVR_SCU_SD_REGS_SD_REG_DIG_DCDC_VTRIM
+> [52070.058967] iwlwifi 0000:00:14.3: 0x0000025B | CNVR_SCU_SD_REGS_SD_REG_ACTIVE_VDIG_MIRROR
+> [52070.058986] iwlwifi 0000:00:14.3: 0x00090006 | FSEQ_PREV_CNVIO_INIT_VERSION
+> [52070.059008] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_WIFI_FSEQ_VERSION
+> [52070.059012] iwlwifi 0000:00:14.3: 0x00290033 | FSEQ_BT_FSEQ_VERSION
+> [52070.059052] iwlwifi 0000:00:14.3: 0x00000136 | FSEQ_CLASS_TP_VERSION
+> [52070.059096] iwlwifi 0000:00:14.3: UMAC CURRENT PC: 0x80473220
+> [52070.059116] iwlwifi 0000:00:14.3: LMAC1 CURRENT PC: 0xd0
+> [52070.059123] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110
+> [52070.059127] iwlwifi 0000:00:14.3: Failed to start RT ucode: -110
+> [52070.059130] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 13 fired (delay=0ms).
+> [52071.033725] iwlwifi 0000:00:14.3: WRT: Collecting data: ini trigger 4 fired (delay=0ms).
+> [52071.439139] iwlwifi 0000:00:14.3: mac start retry 0
+> [52159.495059] ------------[ cut here ]------------
+> [52159.495065] WARNING: CPU: 5 PID: 760 at drivers/net/wireless/intel/iwlwifi/mvm/mac-ctxt.c:274 iwl_mvm_mac_ctxt_init+0x217/0x230 [iwlmvm]
+> [52159.495124] Modules linked in: vhost_net vhost vhost_iotlb tap iptable_mangle xt_CHECKSUM xt_multiport iptable_nat nf_conntrack_netlink xt_nat veth xt_mark xt_MASQUERADE bridge stp llc xt_set ip_set nft_chain_nat nf_nat xfrm_user xfrm_algo ccm rfcomm cmac algif_hash algif_skcipher af_alg snd_seq_dummy snd_hrtimer snd_hda_codec_intelhdmi overlay bnep ip6t_REJECT nf_reject_ipv6 xt_hl zram ip6t_rt 842_decompress 842_compress ipt_REJECT lz4hc_compress nf_reject_ipv4 lz4_compress xt_LOG nf_log_syslog input_leds joydev nft_limit hid_multitouch xt_limit xt_addrtype xt_tcpudp xt_conntrack nf_conntrack nf_defrag_ipv6 nf_defrag_ipv4 nft_compat snd_hda_codec_alc269 snd_hda_scodec_component snd_hda_codec_realtek_lib snd_hda_codec_generic snd_hda_intel nf_tables snd_sof_pci_intel_icl snd_sof_pci_intel_cnl snd_sof_intel_hda_generic nfnetlink soundwire_intel snd_sof_intel_hda_sdw_bpt binfmt_misc snd_sof_intel_hda_common snd_soc_hdac_hda snd_sof_intel_hda_mlink snd_sof_intel_hda snd_hda_codec_hdmi soundwire_cadence snd_sof_pci
+> [52159.495207]  snd_sof_xtensa_dsp snd_sof snd_sof_utils snd_soc_acpi_intel_match snd_soc_acpi_intel_sdca_quirks soundwire_generic_allocation snd_soc_acpi soundwire_bus snd_soc_sdca crc8 snd_soc_avs snd_soc_hda_codec snd_hda_ext_core snd_hda_codec hid_generic intel_uncore_frequency intel_uncore_frequency_common snd_hda_core mei_pxp mei_hdcp snd_intel_dspcfg surface_hid snd_intel_sdw_acpi ipts snd_hwdep surface_hid_core surface_platform_profile platform_profile hid intel_tcc_cooling surface_battery snd_soc_core surface_charger intel_rapl_msr snd_compress x86_pkg_temp_thermal ac97_bus snd_pcm_dmaengine intel_powerclamp snd_pcm coretemp snd_seq_midi iwlmvm snd_seq_midi_event nls_iso8859_1 snd_rawmidi gpio_keys kvm_intel surface_gpe processor_thermal_device_pci_legacy snd_seq btusb mac80211 processor_thermal_device kvm processor_thermal_wt_hint btrtl platform_temperature_control snd_seq_device btintel irqbypass processor_thermal_rfim libarc4 snd_timer btbcm btmtk processor_thermal_rapl rapl cmdlinepart iwlwifi spi_nor snd
+> [52159.495312]  intel_cstate intel_rapl_common mei_me intel_wmi_thunderbolt bluetooth mtd 8250_dw intel_pmc_core soundcore mei pmt_telemetry processor_thermal_wt_req cfg80211 processor_thermal_power_floor pmt_discovery pmt_class processor_thermal_mbox int3403_thermal intel_soc_dts_iosf int340x_thermal_zone surfacepro3_button intel_pmc_ssram_telemetry mac_hid int3400_thermal surface_aggregator_registry acpi_pad soc_button_array surface_hotplug surface_acpi_notify intel_vsec acpi_tad dptf_power acpi_thermal_rel sch_fq_codel kyber_iosched msr parport_pc ppdev lp parport efi_pstore ip_tables x_tables autofs4 dm_crypt raid10 raid456 async_raid6_recov async_memcpy async_pq async_xor async_tx xor raid6_pq raid1 raid0 linear system76_io(OE) system76_acpi(OE) i915 nvme drm_buddy polyval_clmulni ttm ghash_clmulni_intel i2c_algo_bit nvme_core spi_intel_pci drm_display_helper nvme_keyring intel_lpss_pci spi_intel nvme_auth intel_lpss cec idma64 rc_core video surface_aggregator wmi crc_itu_t pinctrl_icelake aesni_intel
+> [52159.495406] CPU: 5 UID: 0 PID: 760 Comm: NetworkManager Tainted: G        W  OE       6.17.1-surface-2 #2 PREEMPT(voluntary) 
+> [52159.495413] Tainted: [W]=WARN, [O]=OOT_MODULE, [E]=UNSIGNED_MODULE
+> [52159.495415] Hardware name: Microsoft Corporation Surface Laptop 3/Surface Laptop 3, BIOS 19.101.140 04/11/2024
+> [52159.495418] RIP: 0010:iwl_mvm_mac_ctxt_init+0x217/0x230 [iwlmvm]
+> [52159.495461] Code: 24 48 c7 c2 10 37 18 c1 31 f6 e8 54 b6 7c ff e9 08 ff ff ff f3 48 0f bc c0 89 83 58 07 00 00 83 f8 04 0f 85 4f ff ff ff eb d3 <0f> 0b b8 f0 ff ff ff e9 6d fe ff ff e8 b8 76 cb cb 0f 1f 84 00 00
+> [52159.495464] RSP: 0018:ffffcf9f42d9f1d8 EFLAGS: 00010202
+> [52159.495468] RAX: 0000000000000050 RBX: ffff8e39a1eb9f08 RCX: 0000000000000000
+> [52159.495471] RDX: 0000000000000000 RSI: 0000000000000000 RDI: 0000000000000000
+> [52159.495473] RBP: ffffcf9f42d9f218 R08: 0000000000000000 R09: 0000000000000000
+> [52159.495475] R10: 0000000000000000 R11: 0000000000000000 R12: ffff8e398739a048
+> [52159.495477] R13: ffff8e39a1eb9f08 R14: ffff8e398739a078 R15: ffff8e39a1eba3b0
+> [52159.495512] FS:  00007d87606454c0(0000) GS:ffff8e3d4ca60000(0000) knlGS:0000000000000000
+> [52159.495515] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+> [52159.495518] CR2: ffffe5074426dc20 CR3: 00000001102b3006 CR4: 0000000000772ef0
+> [52159.495521] PKRU: 55555554
+> [52159.495522] Call Trace:
+> [52159.495525]  <TASK>
+> [52159.495530]  iwl_mvm_mld_mac_add_interface+0x90/0x310 [iwlmvm]
+> [52159.495572]  drv_add_interface+0x4f/0x270 [mac80211]
+> [52159.495652]  ieee80211_do_open+0x582/0x7e0 [mac80211]
+> [52159.495745]  ieee80211_open+0x6e/0xa0 [mac80211]
+> [52159.495833]  __dev_open+0x109/0x2a0
+> [52159.495841]  __dev_change_flags+0x1b1/0x220
+> [52159.495847]  netif_change_flags+0x26/0x80
+> [52159.495852]  do_setlink.constprop.0+0x3b1/0x12b0
+> [52159.495858]  ? intel_iommu_map_pages+0x35e/0x710
+> [52159.495865]  ? __nla_validate_parse+0x59/0xe90
+> [52159.495871]  ? sched_balance_newidle+0x2bc/0x420
+> [52159.495880]  ? security_capable+0x7e/0x1f0
+> [52159.495886]  ? ns_capable+0x2d/0x70
+> [52159.495891]  ? netlink_create+0x1d0/0x280
+> [52159.495900]  rtnl_newlink+0x900/0xd60
+> [52159.495905]  ? iommu_map+0x3e/0xa0
+> [52159.495911]  ? __iommu_dma_map+0xa0/0x190
+> [52159.495919]  ? security_capable+0x7e/0x1f0
+> [52159.495924]  ? __pfx_rtnl_newlink+0x10/0x10
+> [52159.495929]  rtnetlink_rcv_msg+0x364/0x410
+> [52159.495933]  ? bdev_getblk+0x31/0x90
+> [52159.495941]  ? ext4_inode_csum+0xee/0x120
+> [52159.495947]  ? __pfx_rtnetlink_rcv_msg+0x10/0x10
+> [52159.495951]  netlink_rcv_skb+0x58/0x110
+> [52159.495957]  rtnetlink_rcv+0x15/0x30
+> [52159.495960]  netlink_unicast+0x28b/0x3b0
+> [52159.495965]  netlink_sendmsg+0x1f3/0x440
+> [52159.495970]  ____sys_sendmsg+0x39c/0x3d0
+> [52159.495975]  ___sys_sendmsg+0x87/0xe0
+> [52159.495982]  ? __wake_up_sync+0x45/0x70
+> [52159.495989]  ? ep_poll_callback+0x2a4/0x320
+> [52159.495995]  ? __wake_up_common+0x7b/0xb0
+> [52159.496003]  ? __wake_up_sync_key+0x49/0x80
+> [52159.496010]  __sys_sendmsg+0x73/0xe0
+> [52159.496017]  __x64_sys_sendmsg+0x1d/0x30
+> [52159.496022]  x64_sys_call+0x21c5/0x2740
+> [52159.496028]  do_syscall_64+0x7f/0x1080
+> [52159.496035]  ? ___sys_sendmsg+0x94/0xe0
+> [52159.496040]  ? ksys_write+0xd3/0xf0
+> [52159.496045]  ? refill_obj_stock+0x14d/0x340
+> [52159.496052]  ? __memcg_slab_free_hook+0x103/0x160
+> [52159.496059]  ? __fput+0x1ae/0x2f0
+> [52159.496062]  ? kmem_cache_free+0x34c/0x460
+> [52159.496069]  ? __fput+0x1ae/0x2f0
+> [52159.496073]  ? fput_close_sync+0x40/0xa0
+> [52159.496077]  ? __x64_sys_close+0x3e/0x80
+> [52159.496083]  ? x64_sys_call+0x1c34/0x2740
+> [52159.496087]  ? do_syscall_64+0xb8/0x1080
+> [52159.496092]  ? __x64_sys_sendmsg+0x1d/0x30
+> [52159.496097]  ? x64_sys_call+0x21c5/0x2740
+> [52159.496100]  ? do_syscall_64+0xb8/0x1080
+> [52159.496105]  ? file_check_and_advance_wb_err+0x2b/0xd0
+> [52159.496111]  ? __rseq_handle_notify_resume+0xab/0x4c0
+> [52159.496117]  ? ext4_sync_file+0x1cc/0x390
+> [52159.496124]  ? do_fcntl+0x74b/0x7d0
+> [52159.496128]  ? restore_fpregs_from_fpstate+0x3d/0xc0
+> [52159.496136]  ? __x64_sys_fcntl+0xaa/0x130
+> [52159.496139]  ? __task_pid_nr_ns+0xad/0xd0
+> [52159.496145]  ? __do_sys_getpid+0x1d/0x30
+> [52159.496149]  ? x64_sys_call+0x8cf/0x2740
+> [52159.496153]  ? do_syscall_64+0xb8/0x1080
+> [52159.496158]  ? clear_bhb_loop+0x30/0x80
+> [52159.496162]  ? clear_bhb_loop+0x30/0x80
+> [52159.496167]  entry_SYSCALL_64_after_hwframe+0x76/0x7e
+> [52159.496170] RIP: 0033:0x7d8761127a0d
+> [52159.496181] Code: 28 89 54 24 1c 48 89 74 24 10 89 7c 24 08 e8 fa 8f f6 ff 8b 54 24 1c 48 8b 74 24 10 41 89 c0 8b 7c 24 08 b8 2e 00 00 00 0f 05 <48> 3d 00 f0 ff ff 77 33 44 89 c7 48 89 44 24 08 e8 3e 90 f6 ff 48
+> [52159.496184] RSP: 002b:00007ffc5ef7e1e0 EFLAGS: 00000293 ORIG_RAX: 000000000000002e
+> [52159.496188] RAX: ffffffffffffffda RBX: 0000000000000099 RCX: 00007d8761127a0d
+> [52159.496191] RDX: 0000000000000000 RSI: 00007ffc5ef7e220 RDI: 000000000000000d
+> [52159.496193] RBP: 00005d0f4dec2030 R08: 0000000000000000 R09: 0000000000000000
+> [52159.496195] R10: 0000000000000000 R11: 0000000000000293 R12: 0000000000000000
+> [52159.496197] R13: 00007ffc5ef7e370 R14: 00007ffc5ef7e36c R15: 0000000000000000
+> [52159.496203]  </TASK>
+> [52159.496204] ---[ end trace 0000000000000000 ]---
+> [52159.703856] debugfs: 'netdev:wlp0s20f3' already exists in 'iwlmvm'
+> [52159.703863] debugfs: 'iwlmvm' already exists in 'netdev:wlp0s20f3'
+> [52159.703865] iwlwifi 0000:00:14.3: Failed to create debugfs directory under netdev:wlp0s20f3
+> [52159.719729] debugfs: 'netdev:p2p-dev-wlp0s20' already exists in 'iwlmvm'
+> [52162.721682] wlp0s20f3: authenticate with 88:9c:ad:04:e5:6e (local address=c8:34:8e:0b:fe:b2)
+> [52162.722716] wlp0s20f3: send auth to 88:9c:ad:04:e5:6e (try 1/3)
+> [52162.760174] wlp0s20f3: authenticated
+> [52162.762260] wlp0s20f3: associate with 88:9c:ad:04:e5:6e (try 1/3)
+> [52162.765663] wlp0s20f3: RX AssocResp from 88:9c:ad:04:e5:6e (capab=0x1111 status=0 aid=7)
+> [52162.777362] wlp0s20f3: associated
+> [52162.794377] wlp0s20f3: Limiting TX power to 23 (23 - 0) dBm as advertised by 88:9c:ad:04:e5:6e
+> ```
+
 Forsøkt å skru av power save state
 [wireless - How to permanently set Wi-Fi "power management" flag to off? - Ask Ubuntu](https://askubuntu.com/questions/1294591/how-to-permanently-set-wi-fi-power-management-flag-to-off)
 ```
@@ -810,6 +1779,17 @@ sudo modprobe iwlwifi
 
 ~~Forsøkt lastet ned backports firmware pakket av debian [iwlwifi - Debian Wiki](https://wiki.debian.org/iwlwifi#Troubleshooting)~~
 ~~[Debian -- Package Download Selection -- firmware-iwlwifi\_20250410-2\~bpo12+1\_all.deb](https://packages.debian.org/bookworm-backports/all/firmware-iwlwifi/download)~~
+
+
+[Surface Laptop 3 · linux-surface/linux-surface Wiki · GitHub](https://github.com/linux-surface/linux-surface/wiki/Surface-Laptop-3#iwlwifi-direct-firmware-load-for-iwlwifi-quqnj-b0-hr-b0-50ucode-failed-with-error--2)
+```
+git clone https://chromium.googlesource.com/chromiumos/third_party/linux-firmware chromiumos-linux-firmware
+cd chromiumos-linux-firmware
+sudo cp -v -R /lib/firmware /lib/firmware.old 
+sudo cp -v iwlwifi-* /lib/firmware/
+cd /lib/firmware
+sudo ln -s iwlwifi-Qu-c0-hr-b0-50.ucode iwlwifi-Qu-b0-hr-b0-50.ucode
+```
 
 
 # 28.08.2024 Installere POP_OS og dual-boote
