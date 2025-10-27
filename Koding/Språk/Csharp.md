@@ -1,14 +1,5 @@
 #programmeringsspråk 
 
-# Eksamen
-Ha en solution for alle deloppgaver, men dele i egne 
-```csharp
-// deloppgave a
-{
-	// kode
-}
-```
-
 # Strukturer
 Break/Continue
 - The `continue` statement breaks one iteration (in the loop).
@@ -1293,3 +1284,105 @@ for (int i = 1; i <= 100; i++)
 ```
 
 
+
+# Eksamen
+Ha en solution for alle deloppgaver, men dele i egne 
+```csharp
+// deloppgave a
+{
+	// kode
+}
+```
+
+
+---
+
+# Algoritmer
+Orden av en algoritme; fjerner konstanter og andre "ubetydelige" ledd/faktorer; ser kun på den mest betydningsfulle komponenten.
+$3n^4 + 1 / n = O(n^4)$
+![[Csharp-1761561704552.webp|500x255]]![[Csharp-1761561713768.webp|500x369]]
+
+```cs
+static void GenererVerdier(List<int> l, int antall)
+{
+	Random r = new Random();
+
+	for (int i = 0; i < antall; i++)
+	{
+		l.Add(r.Next(100, 1000));
+	}
+}
+
+// BUBBLESORT
+static void BubbleSort(List<int> l)
+{
+	int temp;
+	int antall = l.Count;
+	for (int j = 0; j < antall - 1; j++)
+	{
+		for (int i = 0; i < (antall - 1) - j; i++)
+		{
+			if (l[i] > l[i + 1])
+			{
+				temp = l[i];
+				l[i] = l[i + 1];
+				l[i + 1] = temp;
+			}
+		}
+	}
+}
+
+
+// MERGESORT
+static void MergeSort(List<int> l, int fra, int til)
+{
+	if (fra < til)
+	{
+		int midtpunkt = (fra + til) / 2;
+		MergeSort(l, fra, midtpunkt);
+		MergeSort(l, midtpunkt + 1, til);
+		Merge(l, fra, til);
+	}
+}
+
+static void Merge(List<int> l, int fra, int til)
+{
+	List<int> temp = new List<int>();
+
+	int midtpunkt = (fra + til) / 2;
+
+	int indeksDel1 = fra;
+	int indeksDel2 = midtpunkt + 1;
+
+	while ((indeksDel1 <= midtpunkt) && (indeksDel2 <= til))
+	{
+		if (l[indeksDel1] <= l[indeksDel2])
+		{
+			temp.Add(l[indeksDel1]);
+			indeksDel1++;
+		}
+		else
+		{
+			temp.Add(l[indeksDel2]);
+			indeksDel2++;
+		}
+	}
+	
+	while (indeksDel1 <= midtpunkt)
+	{
+		temp.Add(l[indeksDel1]);
+		indeksDel1++;
+	}
+	while (indeksDel2 <= til)
+	{
+		temp.Add(l[indeksDel2]);
+		indeksDel2++;
+	}
+
+	for (int i = 0; i < temp.Count; i++)
+	{
+		l[fra + i] = temp[i];
+	}
+}
+
+```

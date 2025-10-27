@@ -64,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -113,13 +113,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Hobby/Lolbraa/KrissLaptop.md",
+                "file": "Koding/Språk/Csharp.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of KrissLaptop"
+              "title": "Outline of Csharp"
             }
           }
         ]
@@ -215,8 +215,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "28a3266050da85b4",
+  "active": "bb27d5abfe52d488",
   "lastOpenFiles": [
+    "Koding/Språk/attachments/Csharp-1761561713768.webp",
+    "Koding/Språk/attachments/Csharp-1761561704552.webp",
+    "Hobby/Lolbraa/KrissLaptop.md",
     "Koding/Språk/Csharp.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Oblig 4.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Muntlig Eksamen Spørsmål.md",
@@ -238,7 +241,6 @@
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 6 - Måleusikkerhet-1760614345871.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 6 - Måleusikkerhet-1760614327941.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 6 - Måleusikkerhet-1760614178505.webp",
-    "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 6 - Måleusikkerhet-1760614163821.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/Statistikk 6.excalidraw.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Oblig 2.md",
     "Hobby/Ebøker.md",
@@ -247,7 +249,6 @@
     "Koding/Kommandoer/Linux Kommandoer.md",
     "Koding/Kommandoer/Unraid Kommandoer.md",
     "Hobby/Braa/BraaNAS.md",
-    "Hobby/Lolbraa/KrissLaptop.md",
     "NCG/Paymenter-Vipps.md",
     "Personlig/Jobbsøking.md",
     "Skole/MAS311 - Solar Tech/5 - Building Physics.md",
