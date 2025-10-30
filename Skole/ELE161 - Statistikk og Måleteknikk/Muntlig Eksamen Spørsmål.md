@@ -22,6 +22,10 @@
 		- Ett siffer er ofte tilfellet i industrien, mens to bruker også ofte.
 	- $v = 6,4 m/s$ $U(v) = 0,060 m/s$ 
 	- blir til $v = 6,40 \pm 0,06 m/s$ eller $v = 6,400 \pm 0,060 m/s$
+[[Måleteknikk 7 - Signalbehandling]]
+13. Hva er et filter? Filter er en innretning som endrer på et signal ved å dempe eller fjerne enkelte av frekvensene som signalet består av
+14. Hva er lavpass, høypass, båndpass, båndstopp
+15. 
 
 # Statistikk
 Blir ikke spurt om å regne, men fortelle om hvilke verktøy/modeller som passer til å løse en gitt oppgave
@@ -48,3 +52,4 @@ Lineær regresjon
 Poisson-prosess, vilkårbundet sannsyn
 9. Ventetid "Tid mellom to hendelser", Poisson-prosessen ekspansjonstal fordelt
 10. Det vil komme spørsmål av samme format som [[Statistikk 9 - Geometrisk rekke#Eksempel Tilleggsoppave oppgave 7]].
+

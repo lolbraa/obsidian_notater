@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "476fd722ad7471a0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Skole/ELE161 - Statistikk og Måleteknikk/Måleteknikk 7 - Signalbehandling.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Måleteknikk 7 - Signalbehandling"
+            }
+          },
+          {
             "id": "cd7fa76d6500e2cf",
             "type": "leaf",
             "state": {
@@ -33,48 +47,6 @@
               },
               "icon": "lucide-file",
               "title": "Muntlig Eksamen Spørsmål"
-            }
-          },
-          {
-            "id": "bb27d5abfe52d488",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Koding/Språk/Csharp.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Csharp"
-            }
-          },
-          {
-            "id": "28a3266050da85b4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Skole/MAS311 - Solar Tech/Semesteroppgave.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Semesteroppgave"
-            }
-          },
-          {
-            "id": "b8346fa66e20ee2f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Skole/MAS311 - Solar Tech/Semesteroppgave.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Semesteroppgave"
             }
           },
           {
@@ -92,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -243,19 +215,24 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "6b7842cbfe2bfd41",
+  "active": "476fd722ad7471a0",
   "lastOpenFiles": [
+    "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 7 - Signalbehandling-1761824205932.webp",
+    "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 7 - Signalbehandling-1761823824074.webp",
+    "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 7 - Signalbehandling-1761823784784.webp",
+    "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 7 - Signalbehandling-1761823617613.webp",
+    "Skole/ELE161 - Statistikk og Måleteknikk/Muntlig Eksamen Spørsmål.md",
+    "Skole/ELE161 - Statistikk og Måleteknikk/Måleteknikk 6 - Måleusikkerhet.md",
+    "Skole/ELE161 - Statistikk og Måleteknikk/Måleteknikk 7 - Signalbehandling.md",
+    "Hobby/Lolbraa/KrissLaptop.md",
     "Skole/MAS311 - Solar Tech/Semesteroppgave.md",
     "Skole/MAS311 - Solar Tech/7 - Novel Devices and Applications.md",
     "Attachments/Excalidraw/Drawing 2025-10-29 09.22.50.excalidraw.md",
     "Untitled.md",
-    "Hobby/Lolbraa/KrissLaptop.md",
     "Koding/Språk/Csharp.md",
     "Koding/Språk/attachments/Csharp-1761561713768.webp",
     "Koding/Språk/attachments/Csharp-1761561704552.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/Oblig 4.md",
-    "Skole/ELE161 - Statistikk og Måleteknikk/Muntlig Eksamen Spørsmål.md",
-    "Skole/ELE161 - Statistikk og Måleteknikk/Måleteknikk 6 - Måleusikkerhet.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Statistikk 9 - Geometrisk rekke.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Pasted Image 20251016121538_149 1.png",
     "Skole/ELE161 - Statistikk og Måleteknikk/Statistikk 2 - Notasjon, konsepter og fokus på binomisk fordeling.md",
@@ -266,12 +243,9 @@
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Statistikk 8 - Lineær Regresjon-1760687501304.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Statistikk 8 - Lineær Regresjon-1760687490203.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Statistikk 8 - Lineær Regresjon-1760687444830.webp",
-    "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Statistikk 8 - Lineær Regresjon-1760686474686.webp",
     "Skole/Bacheloroppgave.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Oblig 4.excalidraw.md",
     "Attachments/Excalidraw/Drawing 2025-10-14 11.01.15.excalidraw.md",
-    "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 6 - Måleusikkerhet-1760614345871.webp",
-    "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 6 - Måleusikkerhet-1760614327941.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/Statistikk 6.excalidraw.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Oblig 2.md",
     "Hobby/Ebøker.md",
@@ -279,8 +253,6 @@
     "Hobby/Lolbraa/Tjenester/Media.md",
     "Koding/Kommandoer/Linux Kommandoer.md",
     "Koding/Kommandoer/Unraid Kommandoer.md",
-    "Hobby/Braa/BraaNAS.md",
-    "NCG/Paymenter-Vipps.md",
     "Hobby/Braa/attachments",
     "Koding/Språk/Csharp.pdf",
     "Skole/MAS311 - Solar Tech/attachments",
