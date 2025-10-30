@@ -1791,6 +1791,25 @@ cd /lib/firmware
 sudo ln -s iwlwifi-Qu-c0-hr-b0-50.ucode iwlwifi-Qu-b0-hr-b0-50.ucode
 ```
 
+Hvit, gammel wifi-usb-stick
+Ralink RT2770, rt2800usb, 'rt2870.bin'
+```
+[   58.273844] usb 3-2: new high-speed USB device number 3 using xhci_hcd
+[   58.418016] usb 3-2: New USB device found, idVendor=148f, idProduct=2770, bcdDevice= 1.01
+[   58.418021] usb 3-2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[   58.418022] usb 3-2: Product: 802.11 n WLAN
+[   58.418023] usb 3-2: Manufacturer: Ralink
+[   58.418024] usb 3-2: SerialNumber: 1.0
+[   58.551070] usb 3-2: reset high-speed USB device number 3 using xhci_hcd
+[   58.687792] ieee80211 phy1: rt2x00_set_rt: Info - RT chipset 2872, rev 0202 detected
+[   58.742081] ieee80211 phy1: rt2x00_set_rf: Info - RF chipset 0003 detected
+[   58.742248] ieee80211 phy1: Selected rate control algorithm 'minstrel_ht'
+[   58.742872] usbcore: registered new interface driver rt2800usb
+[   58.751270] rt2800usb 3-2:1.0 wlx342109091e60: renamed from wlan0
+[   58.759711] ieee80211 phy1: rt2x00lib_request_firmware: Info - Loading firmware file 'rt2870.bin'
+[   58.760945] ieee80211 phy1: rt2x00lib_request_firmware: Info - Firmware detected - version: 0.36
+```
+
 
 # 28.08.2024 Installere POP_OS og dual-boote
 ## Dual boot
