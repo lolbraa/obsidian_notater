@@ -25,7 +25,7 @@
 [[Måleteknikk 7 - Signalbehandling]]
 13. Hva er et filter? Filter er en innretning som endrer på et signal ved å dempe eller fjerne enkelte av frekvensene som signalet består av
 14. Hva er lavpass, høypass, båndpass, båndstopp
-15. 
+15. Hvor fort er dempingen i et filter, "hvor fort faller frekvensresponsen"
 
 # Statistikk
 Blir ikke spurt om å regne, men fortelle om hvilke verktøy/modeller som passer til å løse en gitt oppgave

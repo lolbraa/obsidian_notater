@@ -12,4 +12,8 @@ $$
 ![[Måleteknikk 7 - Signalbehandling-1761824205932.webp|500x286]]
 
 
-
+Knekkfrekvens:
+3dB-frekvensen er der amplituden er cirka halvvert. 
+$$
+\omega _{0} = \frac{1}{RC}
+$$
