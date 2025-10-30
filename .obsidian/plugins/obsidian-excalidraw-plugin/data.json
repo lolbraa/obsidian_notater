@@ -107,7 +107,7 @@
   "library2": {
     "type": "excalidrawlib",
     "version": 2,
-    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.16.1",
+    "source": "https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/tag/2.15.2",
     "libraryItems": [
       {
         "status": "unpublished",
@@ -11604,10 +11604,8 @@
   "mdCSS": "",
   "scriptEngineSettings": {},
   "defaultTrayMode": true,
-  "compactModeOnTablets": true,
   "previousRelease": "2.16.1",
   "showReleaseNotes": true,
-  "compareManifestToPluginVersion": true,
   "showNewVersionNotification": false,
   "latexBoilerplate": "\\color{blue}",
   "latexPreambleLocation": "preamble.sty",
@@ -12290,5 +12288,7 @@
     "customPaperColor": "#ffffff",
     "alignment": "center",
     "margin": "normal"
-  }
+  },
+  "compactModeOnTablets": true,
+  "compareManifestToPluginVersion": true
 }

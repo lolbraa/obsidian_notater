@@ -36,6 +36,18 @@
             }
           },
           {
+            "id": "6258afc4b6796801",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Skole/ING303 - Systemtenkning og Innovasjon/TilbakemeldingsDiagram.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "TilbakemeldingsDiagram.excalidraw"
+            }
+          },
+          {
             "id": "cd7fa76d6500e2cf",
             "type": "leaf",
             "state": {
@@ -64,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -215,14 +227,15 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "cd7fa76d6500e2cf",
+  "active": "476fd722ad7471a0",
   "lastOpenFiles": [
+    "Skole/ING303 - Systemtenkning og Innovasjon/TilbakemeldingsDiagram.excalidraw.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Måleteknikk 7 - Signalbehandling.md",
+    "Skole/ELE161 - Statistikk og Måleteknikk/Muntlig Eksamen Spørsmål.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 7 - Signalbehandling-1761824205932.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 7 - Signalbehandling-1761823824074.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 7 - Signalbehandling-1761823784784.webp",
     "Skole/ELE161 - Statistikk og Måleteknikk/attachments/Måleteknikk 7 - Signalbehandling-1761823617613.webp",
-    "Skole/ELE161 - Statistikk og Måleteknikk/Muntlig Eksamen Spørsmål.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Måleteknikk 6 - Måleusikkerhet.md",
     "Hobby/Lolbraa/KrissLaptop.md",
     "Skole/MAS311 - Solar Tech/Semesteroppgave.md",

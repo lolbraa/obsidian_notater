@@ -17,3 +17,12 @@ Knekkfrekvens:
 $$
 \omega _{0} = \frac{1}{RC}
 $$
+
+
+Huskeregler for kjapp rekning på dB:
+- 6 dB tilsier faktor 2
+- 20 dB tilsier faktor 10
+
+26 dB = 20 db + 6 dB = faktor 10 * 2 = faktor 20
+
+8V med dempning på 26 dB = 8V / 20 = 0.4V
