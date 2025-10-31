@@ -43,7 +43,9 @@ Blir ikke spurt om å regne, men fortelle om hvilke verktøy/modeller som passer
 6. Uansett hva slags hypotesetesting: Utregning gir p-verdi på feks 0.025 
 	- **Hva forteller en p-verdi oss?**
 	- Sannsynlighet for å se noe som er minst like ekstremt i retning $H_1$, gitt at $H_0$ er sant
-	- 
+	- Hypotesetestene
+	- Konkludere basert på hypotesetester
+
 Lineær regresjon (GARANTERT)
 7. Vi vil få spørsmål om lineær regresjon med tabell av estimater (?), som på alle tidligere eksamener, og så måtte forklare hva det betyr
 	1. Gitt to sett med verdier/tabeller, ville du valgt den med lav eller høy R-squared? Høy, det er best modell.
@@ -54,6 +56,7 @@ Lineær regresjon (GARANTERT)
 		1. Les ut $\hat{\alpha}$ og $\hat{\beta}$ - forventede/estimerte verdier - og putt i $\hat{y}(x) = \hat{\beta}x + \hat{\alpha}$
 		2. R-squared forteller om hvor mye variasjon i x-retning forteller om y-retning. = 1 betyr støyfritt og bra. Ingeniørtommelfingerregel >0.65 er cutoff. Veldig avhengig av fagfelt.
 		3. $\text{estimat} \pm \text{kvantil} * \text{estimat av standardavvik (SE)}$, feks:  $\hat{\beta} \pm \text{kvantil} * SE(\hat{\beta})$
+		4. Basert på observasjonene kan man regne ut 95% konfidensintervall for $\beta$. Er det korrekt å konkludere at $\beta$ ligger i dette intervallet? **NEI**, hvis man beregner mange intervall, forteller konfidensintervallet at 95% av disse vil inneholde det sanne gjennomsnittet.
 
 Poisson-prosess, vilkårbundet sannsyn
 10. Ventetid "Tid mellom to hendelser", Poisson-prosessen ekspansjonstal fordelt
