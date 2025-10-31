@@ -47,7 +47,8 @@
               "title": "TilbakemeldingsDiagram.excalidraw"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -198,10 +199,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "cd7fa76d6500e2cf",
+  "active": "6258afc4b6796801",
   "lastOpenFiles": [
-    "Skole/ELE161 - Statistikk og Måleteknikk/Statistikk 8 - Lineær Regresjon.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Muntlig Eksamen Spørsmål.md",
+    "Skole/ELE161 - Statistikk og Måleteknikk/Statistikk 8 - Lineær Regresjon.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Måleteknikk 7 - Signalbehandling.md",
     "Skole/ELE161 - Statistikk og Måleteknikk/Måleteknikk 6 - Måleusikkerhet.md",
     "Hobby/Lolbraa/KrissLaptop.md",
