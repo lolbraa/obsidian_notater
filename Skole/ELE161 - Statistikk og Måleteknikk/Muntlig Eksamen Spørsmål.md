@@ -1,3 +1,4 @@
+Ingen konkrete regnestykker eller formler (?), heller forklare og vise forståelse
 # Måleteknikk
 [[Måleteknikk 1 - Temperatur og resistans]]
 1. Hvordan måler man temperatur elektrisk? Hvorfor gjør man det i stedet for fysisk avlesning av gradestokk?
@@ -43,13 +44,18 @@ Blir ikke spurt om å regne, men fortelle om hvilke verktøy/modeller som passer
 	- **Hva forteller en p-verdi oss?**
 	- Sannsynlighet for å se noe som er minst like ekstremt i retning $H_1$, gitt at $H_0$ er sant
 	- 
-Lineær regresjon
+Lineær regresjon (GARANTERT)
 7. Vi vil få spørsmål om lineær regresjon med tabell av estimater (?), som på alle tidligere eksamener, og så måtte forklare hva det betyr
 	1. Gitt to sett med verdier/tabeller, ville du valgt den med lav eller høy R-squared? Høy, det er best modell.
 8. Får en oppgave med en del tekst og informasjon
-	1. Hent ut 
+	1. Hente ut informasjon
+	2. Sjekke at det du ønsker å finne er innenfor $X_{min}$ og $X_{max}$. Innenfor (og litt utenfor) område fungerer modellen for interpolasjon, utenfor kan man ikke garantere noe
+	3. Får (gjerne?) en standard tabell (lineær modell tilpasning ?) med all nødvendig informasjon
+		1. Les ut $\hat{\alpha}$ og $\hat{\beta}$ - forventede/estimerte verdier - og putt i $\hat{y}(x) = \hat{\beta}x + \hat{\alpha}$
+		2. R-squared forteller om hvor mye variasjon i x-retning forteller om y-retning. = 1 betyr støyfritt og bra. Ingeniørtommelfingerregel >0.65 er cutoff. Veldig avhengig av fagfelt.
+		3. $\text{estimat} \pm \text{kvantil} * \text{estimat av standardavvik (SE)}$, feks:  $\hat{\beta} \pm \text{kvantil} * SE(\hat{\beta})$
 
 Poisson-prosess, vilkårbundet sannsyn
-9. Ventetid "Tid mellom to hendelser", Poisson-prosessen ekspansjonstal fordelt
-10. Det vil komme spørsmål av samme format som [[Statistikk 9 - Geometrisk rekke#Eksempel Tilleggsoppave oppgave 7]].
+10. Ventetid "Tid mellom to hendelser", Poisson-prosessen ekspansjonstal fordelt
+11. Det vil komme spørsmål av samme format som [[Statistikk 9 - Geometrisk rekke#Eksempel Tilleggsoppave oppgave 7]].
 
