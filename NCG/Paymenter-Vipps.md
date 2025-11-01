@@ -7,6 +7,7 @@
 - [x] 1.0 - Fundamentalt fungerende plugin, men mangler quality of life og sikringer ift. betalinger.
 - [x] 1.1 - Admistrasjonspanel: eget Vipps panel med payment status hentet fra API
 - [x] 1.2 - Polling (i tillegg til Webhooks) av get payment status / capture payment. 
+- [ ] BUG: Hvis updatepaymentstate blir trigget etter en godkjent betaling, blir den markert pending!
 - [ ] 1.x - Støtte Paymenter v1.3. CanUseGateway og Credits.
 - [ ] 1.x - Støtte andre valutaer. ePayment og Recurring støtter NOK, DKK og EUR ? [ePayment API \| Vipps MobilePay Developer Docs](https://developer.vippsmobilepay.com/api/epayment/#tag/CreatePayments/operation/createPayment) [Recurring Payments Merchant API \| Vipps MobilePay Developer Docs](https://developer.vippsmobilepay.com/api/recurring/#tag/Agreement-v3-endpoints/operation/DraftAgreementV3)
 - [ ] 2.x Støtte MobilePay? Vipps' kortbetaling "Freestanding card"? [How ePayment works with freestanding cards \| Vipps MobilePay Developer Docs](https://developer.vippsmobilepay.com/docs/APIs/epayment-api/how-it-works/freestanding-cards/)
